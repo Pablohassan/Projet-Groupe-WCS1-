@@ -23,3 +23,14 @@ body {
 img {
     width: 50%;
 }
+
+.flex-container{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flex-container a{
+    flex: 1 1 0;
+}
