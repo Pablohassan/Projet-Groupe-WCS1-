@@ -24,13 +24,16 @@ img {
     width: 50%;
 }
 
-.flex-container{
-    width: 15%;
+.flex-container {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
-
-.flex-container a{
+    
+.flex-container a {
     flex: 1 1 0;
+ }
+
+ .flex-container a img {
+    width: 10%;
 }
