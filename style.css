@@ -1,0 +1,25 @@
+:root {
+--spacing: 8px;
+--color-primary: black;
+--color-secondary: grey;
+/* 
+Media queries : break point 600px exemple : au dessus de 600px version écran, en dessous menu burger
+Vérifier que cela soit correct en 320px */
+}
+
+body {
+    color: var(--color-primary);
+
+}
+
+.bg-primary {
+    background-color: var(--color-secondary);
+}
+
+.mon-element {
+    margin: calc(var(--spacing) *2 )
+}
+
+img {
+    width: 50%;
+}

@@ -1,80 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Bastide Tour</title>
-    <link rel="stylesheet" href="./style-carousel.css">
-</head>
-<body>
-    Hello les Wilders
-    <div id="item"></div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-carousel.css" />
+  </head>
+  <body>
+    <section class="bg-primary">
+      <nav>
+        <ul>
+          <li><a href="#workshop">Home</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#featured-posts">Featured posts</a></li>
+        </ul>
+      </nav>
+    </section>
+    <header>
+      <h1>CSS-only Carousel</h1>
 
-    <h1>CSS-only Carousel</h1>
+      <p>Le petit carousel en CSS qui va bien</p>
 
-<p>Le petit carousel en CSS qui va bien </p>
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide4" class="carousel__prev"
+                >Go to last slide</a
+              >
+              <a href="#carousel__slide2" class="carousel__next"
+                >Go to next slide</a
+              >
+            </div>
+          </li>
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide3" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide4" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide1" class="carousel__next"
+              >Go to first slide</a
+            >
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button"
+                >Go to slide 1</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button"
+                >Go to slide 2</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button"
+                >Go to slide 3</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4" class="carousel__navigation-button"
+                >Go to slide 4</a
+              >
+            </li>
+          </ol>
+        </aside>
+      </section>
+    </header>
+    <section>
+      <!-- Ajouter un carrousel pour faire défiler les photos -->
+      <p>Petite description des images qui défilent</p>
+    </section>
+    <main>
+      <section>
+        <h2>Restaurants</h2>
+        <h3>Siman</h3>
+        <img
+          src="assets/Siman-restaurant-photo.png"
+          alt="Photo du Siman (restaurant)"
+        />
+        <p>
+          Installez-vous confortablement et découvrez un lieu chaleureux habité
+          par une cuisine bistronomique de qualité et un personnel professionnel
+          et convivial. Cadre déroutant, emplacement imprenable sur la rive
+          droite de Bordeaux et rooftop surplombant la ville, face à la célèbre
+          Place de la Bourse… Le Siman surprend autant qu’il séduit. C’est dans
+          cette atmosphère unique que nous vous invitons à notre table pour
+          partager un déjeuner ou un dîner. Sans oublier nos brunchs dominicaux
+          !
+        </p>
+        <h3>Nom du lieu 2</h3>
+        <p>Description du lieu</p>
+        <h3>Nom du lieu 3</h3>
+        <p>Description du lieu</p>
+      </section>
 
-<section class="carousel" aria-label="Gallery">
-  <ol class="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper">
-        <a href="#carousel__slide4"
-           class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
-      </div>
-    </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
-    </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide4"
-         class="carousel__next">Go to next slide</a>
-    </li>
-    <li id="carousel__slide4"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide3"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide1"
-         class="carousel__next">Go to first slide</a>
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-           class="carousel__navigation-button">Go to slide 1</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-           class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-           class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4"
-           class="carousel__navigation-button">Go to slide 4</a>
-      </li>
-    </ol>
-  </aside>
-</section>
-</body>
+      <section>
+        <h2>Thématique 2</h2>
+        <h3>Nom du lieu 1</h3>
+        <p>Description du lieu</p>
+        <h3>Nom du lieu 2</h3>
+        <p>Description du lieu</p>
+        <h3>Nom du lieu 3</h3>
+        <p>Description du lieu</p>
+      </section>
+
+      <section>
+        <h2>Thématique 3</h2>
+        <h3>Nom du lieu 1</h3>
+        <p>Description du lieu</p>
+        <h3>Nom du lieu 2</h3>
+        <p>Description du lieu</p>
+        <h3>Nom du lieu 3</h3>
+        <p>Description du lieu</p>
+      </section>
+    </main>
+
+    <footer>© 2022 Le Carré</footer>
+  </body>
 </html>
