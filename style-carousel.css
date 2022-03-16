@@ -104,23 +104,36 @@
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: #f99;
+    background-image: url(/assets/alirc.jpeg);
+    background-size: 100%;
     counter-increment: item;
   }
   
-  .carousel__slide:nth-child(even) {
+ 
+   .carousel__slide:nth-child(even) {
     
-    background-image: url(./assets/hdr2.jpeg) ;
-   background-size: 100%;
-  }
-  
+    background-image: url(./assets/bar-eklo.jpeg) ;
+    background-size: 100%;
+   }
+   #carousel__slide3 {
+    
+    background-image: url(./assets/restau-siman.jpeg) ;
+    background-size: 100%;
+   }
+
+   #carousel__slide4 {
+    
+    background-image: url(./assets/bastide-img1.jpeg) ;
+    background-size: 100%;
+   }
+
   .carousel__slide:before {
     content: counter(item);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,70px);
-    color: #fff;
+    background-image: url(./assets/bar-eklo.jpeg);
     font-size: 2em;
   }
   
