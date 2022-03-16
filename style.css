@@ -28,12 +28,10 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 16px;
 }
-    
-.flex-container a {
-    flex: 1 1 0;
- }
 
- .flex-container a img {
-    width: 10%;
+.list-icons img {
+    width: 1.5rem;
+    margin: 8px;
 }
