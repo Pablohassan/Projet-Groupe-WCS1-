@@ -23,3 +23,15 @@ body {
 img {
     width: 50%;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 16px;
+}
+
+.list-icons img {
+    width: 1.5rem;
+    margin: 8px;
+}
