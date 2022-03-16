@@ -7,6 +7,11 @@ Media queries : break point 600px exemple : au dessus de 600px version écran, e
 Vérifier que cela soit correct en 320px */
 }
 
+* {
+    margin: 8px;
+    font-family: 'Lora', serif;
+}
+
 body {
     color: var(--color-primary);
 
