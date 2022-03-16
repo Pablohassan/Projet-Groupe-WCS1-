@@ -12,96 +12,98 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
             rel="stylesheet">
+        <script src="burger.js"></script>
     </head>
     <body>
-        <section>
-            <div class="nav">
-                <label for="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle" />
-                <div class="menu">
-                    <a href="#">Restaurants</a>
-                    <a href="#">Bars</a>
-                    <a href="#">Activités culturelles</a>
-                    <a href="#">Parcs</a>
-                    <a href="#"><span>Home</span></a>
-                </div>
+        <!-- HEADER (avec navbar et doit prendre toute la largeur (sans padding ou margin)) -->
+        <header class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div class="menu">
+                <a href="#restaurants">Restaurants</a>
+                <a href="#bars">Bars</a>
+                <a href="#culturelles">Activités culturelles</a>
+                <a href="#parcs">Parcs</a>
+                <a href="#"><span>Home</span></a>
             </div>
-        </section>
-        <header>
-            <h1>Titre 1</h1>
-            <section>
-                <!-- Ajouter la photo principale  -->
-                <p>Que vous soyez de passage sur Bordeaux ou non, voici un
-                    site répertoriant quelques bonnes adresses du quartier Bastide.
-                    N’hésitez pas à nous faire vos retours sur les endroits que nous
-                    avons sélectionnés pour vous !</p>
-            </section>
         </header>
-        <!-- <p>Le petit carousel en CSS qui va bien</p>-->
-
-        <section class="carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-                <li id="carousel__slide1" tabindex="0"
-                    class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide4" class="carousel__prev">Go
-                            to last slide</a>
-                        <a href="#carousel__slide2" class="carousel__next">Go
-                            to next slide</a>
-                    </div>
-                </li>
-                <li id="carousel__slide2" tabindex="0"
-                    class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1" class="carousel__prev">Go to
-                        previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to
-                        next slide</a>
-                </li>
-                <li id="carousel__slide3" tabindex="0"
-                    class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide2" class="carousel__prev">Go to
-                        previous slide</a>
-                    <a href="#carousel__slide4" class="carousel__next">Go to
-                        next slide</a>
-                </li>
-                <li id="carousel__slide4" tabindex="0"
-                    class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide3" class="carousel__prev">Go to
-                        previous slide</a>
-                    <a href="#carousel__slide1" class="carousel__next">Go to
-                        first slide</a>
-                </li>
-            </ol>
-            <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1"
-                            class="carousel__navigation-button">Go to slide
-                            1</a>
+        <!-- MAIN (avec margin, créer une classe avec du margin et l'appliquer sur main (plus sur le body))-->
+        <main>
+            <!-- <p>Le petit carousel en CSS qui va bien</p>-->
+            <section>
+                <h1>Titre 1</h1>
+                <section>
+                    <!-- Ajouter la photo principale  -->
+                    <p>Que vous soyez de passage sur Bordeaux ou non, voici un
+                        site répertoriant quelques bonnes adresses du quartier
+                        Bastide.
+                        N’hésitez pas à nous faire vos retours sur les endroits
+                        que nous
+                        avons sélectionnés pour vous !</p>
+                </section>
+            </section>
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1" tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide4" class="carousel__prev">Go
+                                to last slide</a>
+                            <a href="#carousel__slide2" class="carousel__next">Go
+                                to next slide</a>
+                        </div>
                     </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2"
-                            class="carousel__navigation-button">Go to slide
-                            2</a>
+                    <li id="carousel__slide2" tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1" class="carousel__prev">Go to
+                            previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to
+                            next slide</a>
                     </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3"
-                            class="carousel__navigation-button">Go to slide
-                            3</a>
+                    <li id="carousel__slide3" tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide2" class="carousel__prev">Go to
+                            previous slide</a>
+                        <a href="#carousel__slide4" class="carousel__next">Go to
+                            next slide</a>
                     </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4"
-                            class="carousel__navigation-button">Go to slide
-                            4</a>
+                    <li id="carousel__slide4" tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide3" class="carousel__prev">Go to
+                            previous slide</a>
+                        <a href="#carousel__slide1" class="carousel__next">Go to
+                            first slide</a>
                     </li>
                 </ol>
-            </aside>
-        </section>
-        <main>
-            <section>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1"
+                                class="carousel__navigation-button">Go to slide
+                                1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2"
+                                class="carousel__navigation-button">Go to slide
+                                2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3"
+                                class="carousel__navigation-button">Go to slide
+                                3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide4"
+                                class="carousel__navigation-button">Go to slide
+                                4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+            <section id="restaurants">
                 <h2>Restaurants</h2>
                 <h3>Siman</h3>
                 <img
@@ -178,7 +180,7 @@
                 </section>
             </section>
 
-            <section>
+            <section id="culturelles">
                 <h2>Activités culturelles</h2>
                 <h3>Darwin Eco-système</h3>
                 <p>
@@ -276,7 +278,7 @@
                     </a>
                 </section>
 
-                <section>
+                <section id="parcs">
                     <h2>Les Parcs</h2>
                     <h3>Le Jardin Botanique</h3>
                     <p>
@@ -361,7 +363,7 @@
             </section>
 
         </main>
-
+        <!-- FOOTER -->
         <footer>
             © 2022 Le Carré
         </footer>
