@@ -6,31 +6,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Bastide Tour</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style-carousel.css">
+        <link rel="stylesheet" href="burger.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
             rel="stylesheet">
     </head>
     <body>
-        <section class="bg-primary">
-            <nav>
-                <ul>
-                    <li><a href="#workshop">Home</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#featured-posts">Featured posts</a></li>
-                </ul>
-            </nav>
+        <section>
+            <div class="nav">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a href="#">Restaurants</a>
+                    <a href="#">Bars</a>
+                    <a href="#">Activités culturelles</a>
+                    <a href="#">Parcs</a>
+                    <a href="#"><span>Home</span></a>
+                </div>
+            </div>
         </section>
         <header>
             <h1>Titre 1</h1>
             <section>
                 <!-- Ajouter la photo principale  -->
-                <p>Description générale du site</p>
+                <p>Que vous soyez de passage sur Bordeaux ou non, voici un
+                    site répertoriant quelques bonnes adresses du quartier Bastide.
+                    N’hésitez pas à nous faire vos retours sur les endroits que nous
+                    avons sélectionnés pour vous !</p>
             </section>
         </header>
-        <section>
-            <!-- Ajouter un carrousel pour faire défiler les photos -->
-            <p>Petite description des images qui défilent</p>
+        <!-- <p>Le petit carousel en CSS qui va bien</p>-->
+
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4" class="carousel__prev">Go
+                            to last slide</a>
+                        <a href="#carousel__slide2" class="carousel__next">Go
+                            to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to
+                        previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to
+                        next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">Go to
+                        previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">Go to
+                        next slide</a>
+                </li>
+                <li id="carousel__slide4" tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3" class="carousel__prev">Go to
+                        previous slide</a>
+                    <a href="#carousel__slide1" class="carousel__next">Go to
+                        first slide</a>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                            class="carousel__navigation-button">Go to slide
+                            1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                            class="carousel__navigation-button">Go to slide
+                            2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                            class="carousel__navigation-button">Go to slide
+                            3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                            class="carousel__navigation-button">Go to slide
+                            4</a>
+                    </li>
+                </ol>
+            </aside>
         </section>
         <main>
             <section>
@@ -108,75 +176,6 @@
                         <img src="assets/phone.png" alt="Telephone" />
                     </a>
                 </section>
-            </section>
-
-            <p>Le petit carousel en CSS qui va bien</p>
-
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide4" class="carousel__prev">Go
-                                to last slide</a>
-                            <a href="#carousel__slide2" class="carousel__next">Go
-                                to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide1" class="carousel__prev">Go to
-                            previous slide</a>
-                        <a href="#carousel__slide3" class="carousel__next">Go to
-                            next slide</a>
-                    </li>
-                    <li id="carousel__slide3" tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2" class="carousel__prev">Go to
-                            previous slide</a>
-                        <a href="#carousel__slide4" class="carousel__next">Go to
-                            next slide</a>
-                    </li>
-                    <li id="carousel__slide4" tabindex="0"
-                        class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3" class="carousel__prev">Go to
-                            previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to
-                            first slide</a>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide1"
-                                class="carousel__navigation-button">Go to slide
-                                1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide2"
-                                class="carousel__navigation-button">Go to slide
-                                2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide3"
-                                class="carousel__navigation-button">Go to slide
-                                3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide4"
-                                class="carousel__navigation-button">Go to slide
-                                4</a>
-                        </li>
-                    </ol>
-                </aside>
-            </section>
-
-            <section>
-                <!-- Ajouter un carrousel pour faire défiler les photos -->
-                <p>Petite description des images qui défilent</p>
             </section>
 
             <section>
