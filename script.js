@@ -18,13 +18,13 @@ link.forEach(langue => {
 const data = {
   "francais":
   {
-    // "title": "Bonjour le monde",//
-    "texte": "Que vous soyez de passage sur Bordeaux ou non, voici un site répertoriant quelques bonnes adresses du quartier Bastide. N’hésitez pas à nous faire vos retours sur les endroits que nous avons sélectionnés pour vous !"
+    "title": "Bonjour le monde",
+    "texte": "Coucou à tous et bienvenue"
   },
   "italiano":
   {
-    //"title": "Ciao mondo",//
-    "texte": "Che tu sia di passaggio o meno per Bordeaux, ecco un sito che elenca alcuni buoni indirizzi nel quartiere della Bastide. Non esitare a darci il tuo feedback sui luoghi che abbiamo selezionato per te!"
+    "title": "Ciao mondo",
+    "texte": "Ciao a tutti e benvenuti"
   }
 }
 
