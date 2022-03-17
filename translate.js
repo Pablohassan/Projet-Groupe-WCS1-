@@ -55,7 +55,7 @@ const data = {
     "italiano":
     {
         "title": "Ristoranti",
-        "texte": "Che tu sia di passaggio o meno per Bordeaux, ecco un sito che elenca alcuni buoni indirizzi nel quartiere della Bastide. Non esitare a darci il tuo feedback sui luoghi che abbiamo selezionato per te!"
+        "texte": "Che tu sia di passaggio o meno a Bordeaux, ecco un sito che elenca alcuni buoni indirizzi nel quartiere di Bastide. Non esitare a darci il tuo feedback sui luoghi che abbiamo selezionato per te!"
     },
 }
 
@@ -67,7 +67,7 @@ const data1 = {
 
     "italiano":
     {
-        "texte1": "Mettiti comodo e scopri un luogo accogliente abitato da una cucina bistrot di qualità e da uno staff professionale e cordiale. Ambiente confuso, posizione inespugnabile sulla riva destra di Bordeaux e tetto che domina la città, di fronte alla famosa Place de la Bourse... Le Siman sorprende tanto quanto seduce. È in questa atmosfera unica che vi invitiamo alla nostra tavola per condividere un pranzo o una cena. Per non parlare dei nostri brunch domenicali!"
+        "texte1": "Mettiti comodo e scopri un luogo accogliente attrezzato di una cucina bistrot di qualità e uno staff professionale e cordiale. Ambiente confuso, con una posizione inespugnabile sulla riva destra di Bordeaux e un tetto che domina la città, di fronte alla famosa Place de la Bourse. Le Siman sorprende tanto quanto seduce. È in questa atmosfera unica che vi invitiamo alla nostra tavola per condividere il pranzo o la cena. Per non parlare dei nostri brunch domenicali!"
     }
 }
 
@@ -78,7 +78,7 @@ const data2 = {
     },
     "italiano":
     {
-        "texte2": "Ristorante e bar con cibo di strada cambogiano. Ambiente familiare e calda accoglienza. Cucina casalinga e salse a base di prodotti freschi Tutti i nostri piatti vengono serviti velocemente e possono essere consumati in loco nella sala da pranzo o in terrazza. Puoi anche portarli via o farteli consegnare dai nostri partner."
+        "texte2": "Ristorante e bar con cibo di strada cambogiano con ambiente familiare e calda accoglienza. Cucina casalinga e salse a base di prodotti freschi. Tutti i nostri piatti vengono serviti velocemente e possono essere consumati nella sala da pranzo o in terrazza. Puoi anche portarli via o farteli consegnare dai nostri partner."
     }
 }
 
@@ -89,7 +89,7 @@ const data3 = {
     },
     "italiano":
     {
-        "texte3": "Il Wasabi Café è uno dei più antichi ristoranti giapponesi di Bordeaux, creato nel 2003. Il nostro credo: offrirti piatti tipici giapponesi con prodotti freschi e di qualità durante tutto l'anno. Il nostro obiettivo: offrirti un viaggio attraverso la gastronomia giapponese. I nostri chef esperti e la nostra carta dei vini e delle bevande renderanno questa esperienza unica."
+        "texte3": "Il Wasabi Café è uno dei più antichi ristoranti giapponesi di Bordeaux, nato nel 2003. Il nostro credo: offrirti piatti tipici giapponesi con prodotti freschi e di qualità durante tutto l'anno. Il nostro obiettivo: offrirti un viaggio attraverso la gastronomia giapponese. I nostri chef esperti e la nostra carta dei vini e delle bevande renderanno questa esperienza unica."
     }
 }
 
@@ -102,7 +102,7 @@ const data4 = {
     "italiano":
     {
         "title2": "Barre",
-        "texte4": ""
+        "texte4": "Il miglior Pub per divertirsi sulla riva destra di Bordeaux, situato a 200 metri dalla fermata Stalingrad. Sulla terrazza, goditi gli splendidi tramonti sulla Garonna o all'interno con un'atmosfera molto « british ». Andateci durante l'happy hour, per la loro ampia varietà di birre e tapas, e restate lì a mangiare: il servizio continua fino alle 2 del mattino."
     }
 }
 
@@ -113,7 +113,7 @@ const data5 = {
     },
     "italiano":
     {
-        "texte5": ""
+        "texte5": "Se ti piace ballare con musica dal vivo, assaporare il tuo pasto « à la bonne franquette » in un'atmosfera tipica del folklore francese, non esitare a visitare Alric: si va da soli, in coppia, con gli amici o la famiglia. Ci si incontra attorno a un drink o un semplice piatto, ci si rallegra sotto le lanterne sull'acqua, ci si incrocia, ci si incontra e la magia avviene lentamente. La musica risuona, accarezza le papille gustative uditive e invita tutti a condividere questo fragile momento di grazia. Si è accolti dalla primavera fino alla fine dell'autunno."
     }
 }
 
@@ -124,7 +124,7 @@ const data6 = {
     },
     "italiano":
     {
-        "texte6": ""
+        "texte6": "Regalati un momento di relax in questo ex cantiere navale del 1902 dove venivano costruite barche di legno. Il suo birrificio produce una gamma di birre biologiche al 100% prodotte da cereali biologici coltivati ​​e maltati nel sud-ovest. Tutto questo senza dimenticare la sua spiaggia, tappa obbligata per ozio inaspettato sulle rive della Garonna."
     }
 }
 
@@ -137,7 +137,7 @@ const data7 = {
     "italiano":
     {
         "title3": "Attività culturali",
-        "texte7": "Darwin è un luogo alternativo sulla riva destra di Bordeaux. Questa ex caserma in disuso è ora eco-riabilitata. Su più di 3 ettari, Darwin organizza la collaborazione tra gli attori del territorio contribuendo alla transizione verso modelli di società più cooperativi e resilienti. Intere sezioni di pareti dedicate alla street-art, skate-park, ristorante e negozio di alimentari biologici, urban farm, spazi di coworking, incubatore d'impresa, officine di riparazione biciclette, roller-derby club e terreno, sale conferenze, concerti…Darwin è un vero ecosistema dove ogni giorno si incontrano più di mille persone."
+        "texte7": "Darwin è un luogo alternativo sulla riva destra di Bordeaux. Questa ex caserma in disuso è ora eco-riabilitata. Su più di 3 ettari, Darwin organizza la collaborazione tra gli attori del territorio contribuendo alla transizione verso modelli di società più cooperativi e resilienti. Ci sono intere sezioni di pareti dedicate alla street-art, uno skate-park, un ristorante e negozio di alimentari biologici, l’urban farm, spazi di coworking, un’incubatore aziendale, officine di riparazione per biciclette, un roller-derby club, sale conferenze e concerti. Darwin è un vero ecosistema dove ogni giorno si incontrano più di 1000 persone."
     }
 }
 
@@ -148,7 +148,7 @@ const data8 = {
     },
     "italiano":
     {
-        "texte8": "Installato nell'ex stazione capolinea del treno Parigi-Orléans, il Mégarama è un cinema multisala sulla riva destra, con caffetteria, vendita di dolci e bevande. Oltre alla trasmissione delle uscite cinematografiche francesi e straniere, troverai lì la stagione « Connaissance du Monde ». Film popolari e film di successo. Anteprime con apparizioni di attori cinematografici."
+        "texte8": "Installato nell'ex stazione capolinea del treno Parigi-Orléans, il Mégarama è un cinema multisala sulla riva destra con caffetteria, vendita di dolci e bevande. Oltre alla proiezione delle uscite cinematografiche francesi e straniere, troverai lì la stagione « Connaissance du Monde ». Film popolari e di successo e anteprime con l’apparizione di attori cinematografici."
     }
 }
 
@@ -159,7 +159,7 @@ const data9 = {
     },
     "italiano":
     {
-        "texte9": "La Casa Cantonale è un luogo polivalente. Interamente ristrutturato tra il 2001 e il 2006, questo edificio in stile Art Nouveau è stato insignito dell'Heritage Ribbon. Ospitava un'aula di tribunale, una biblioteca, una stazione di polizia e il municipio distrettuale. Oggi ospita eventi: spettacoli, convegni, incontri di quartiere e attività associative."
+        "texte9": "La Maison cantonale è un luogo polivalente. Interamente ristrutturato tra il 2001 e il 2006, questo edificio in stile Art Nouveau è stato insignito dell'Heritage Ribbon. Ospitava un'aula di tribunale, una biblioteca, una stazione di polizia e il municipio distrettuale. Oggi ospita eventi,  spettacoli, convegni, incontri di quartiere e attività associative."
     }
 }
 
@@ -172,7 +172,7 @@ const data10 = {
     "italiano":
     {
         "title4": "Parchi",
-        "texte10": "L'Orto Botanico è un'istituzione nata per sensibilizzare l'opinione pubblica sulle piante, la biodiversità, la natura e la gestione sostenibile delle risorse. L'obiettivo dichiarato è mantenere il green. Questo luogo rappresenta un'opportunità per mantenere lo stato Zen, quindi silenzio e tranquillità."
+        "texte10": "Jardin Botanique è un'istituzione nata per sensibilizzare l'opinione pubblica sulle piante, sulla biodiversità, sulla natura e sulla gestione sostenibile delle risorse. L'obiettivo dichiarato è preservare il verde. Questo luogo rappresenta un'opportunità per mantenere lo stato zen, quindi il silenzio e la tranquillità"
     }
 }
 
@@ -183,7 +183,7 @@ const data11 = {
     },
     "italiano":
     {
-        "texte11": "Parc aux Angéliques è un bel posto dove fare passeggiate rimanendo a contatto con la natura e fare picnic con la famiglia o gli amici. Il parco prende il nome da un fiore che rappresenta ispirazione e passione."
+        "texte11": "Parc aux Angéliques è un bel posto dove fare passeggiate rimanendo a contatto con la natura e fare picnic con la famiglia o gli amici. Il parco prende il nome da un fiore che rappresenta l’ispirazione e la passione."
     }
 }
 
@@ -194,6 +194,6 @@ const data12 = {
     },
     "italiano":
     {
-        "texte12": "Pinçon Park è uno spazio verde situato nel cuore del quartiere Bastide dove i bambini possono giocare con strutture ludiche. Questo luogo fa parte del progetto di ripiantare alberi, preservare le diverse specie e ridurre l'effetto serra."
+        "texte12": "Parc Pinçon è uno spazio verde situato nel cuore del quartiere Bastide dove i bambini possono giocare con le strutture ludiche. Questo luogo fa parte del progetto per ripiantare alberi, preservare le diverse specie e ridurre l'effetto serra."
     }
 }
