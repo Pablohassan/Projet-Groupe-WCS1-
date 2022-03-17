@@ -1,5 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0">
+            <title>La Bastide Tour</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style-carousel.css">
+            <link rel="stylesheet" href="burger.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+                rel="stylesheet">
+        </head>
+        <body>
+
+            <div class="container">
+                <div class="langWrap">
+                    <a href="#" language="francais" class="active">🇫🇷</a>
+                    <a href="#" language="italiano">🇮🇹</a>
+                </div>
+        
+                 <!-- <div class="content">
+                    <h1 class="title">Bonjour le monde</h1>
+                    <p class="texte">Coucou à tous et bienvenue</p>
+                </div> -->
+
+            <section>
+                <div class="nav">
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle" />
+                    <div class="menu">
+                        <a href="#">Restaurants</a>
+                        <a href="#">Bars</a>
+                        <a href="#">Activités culturelles</a>
+                        <a href="#">Parcs</a>
+                        <a href="#"><span>Home</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <header>
+                <h1>La Bastide</h1>
+                <section class="description">
+                    <!-- Ajouter la photo principale  -->
+                    <div class="content">
+                        <h1 class="title"> </h1> <!-- voir pour supprimer ce titre vide -->
+                        <p class="texte">Que vous soyez de passage sur
+                            Bordeaux ou non, voici un
+                            site répertoriant quelques bonnes adresses du
+                            quartier Bastide.
+                            N’hésitez pas à nous faire vos retours sur les
+                            endroits que nous
+                            avons sélectionnés pour vous !</p>
+                    </div>
+                </section>
+            </header>
+            <!-- <p>Le petit carousel en CSS qui va bien</p>-->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,6 +101,7 @@
                         avons sélectionnés pour vous !</p>
                 </section>
             </section>
+
             <section class="carousel" aria-label="Gallery">
                 <ol class="carousel__viewport">
                     <li id="carousel__slide1" tabindex="0"
@@ -103,6 +163,39 @@
                     </ol>
                 </aside>
             </section>
+
+            <main>
+                <section>
+                    <h2>Restaurants</h2>
+                    <h3>Siman</h3>
+                    <img
+                        src="assets/Siman-restaurant-photo.png"
+                        alt="Photo du Siman
+                        (restaurant)"
+                        />
+                    <p>
+                        Installez-vous confortablement et découvrez un lieu
+                        chaleureux habité
+                        par une cuisine bistronomique de qualité et un personnel
+                        professionnel
+                        et convivial. Cadre déroutant, emplacement imprenable
+                        sur la
+                        rive
+                        droite de Bordeaux et rooftop surplombant la ville, face
+                        à
+                        la célèbre
+                        Place de la Bourse… Le Siman surprend autant qu’il
+                        séduit.
+                        C’est dans
+                        cette atmosphère unique que nous vous invitons à notre
+                        table
+                        pour
+                        partager un déjeuner ou un dîner. Sans oublier nos
+                        brunchs
+                        dominicaux
+                        !
+                    </p>
+=======
             <section id="restaurants">
                 <h2>Restaurants</h2>
                 <h3>Siman</h3>
@@ -145,40 +238,42 @@
 
                 <h3>Nom du lieu 2</h3>
                 <p>Description du lieu</p>
+                    <section class="flex-container list-icons">
+                        <a href="https://www.siman-bordeaux.com/"
+                            target="_blank">
+                            <img src="assets/globe.png" alt="Site web" />
+                        </a>
+                        <a
+                            href="https://www.google.fr/maps/place/Le+Siman/@44.8417682,-0.5710375,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262d121989c7:0xb4beb44d88ff65cd!8m2!3d44.8417466!4d-0.5623146"
+                            target="_blank">
+                            <img src="assets/lieu.png" alt="Y aller" />
+                        </a>
+                        <a href="tel:+33556674990" target="_blank">
+                            <img src="assets/phone.png" alt="Telephone" />
+                        </a>
+                    </section>
 
-                <section class="flex-container list-icons">
-                    <a
-                        href="https://khmer-street-food.eatbu.com/?lang=fr"
-                        target="_blank">
-                        <img src="assets/globe.png" alt="Site web" />
-                    </a>
-                    <a
-                        href="https://www.google.fr/maps/place/KHMER+STREET+FOOD+BORDEAUX/@44.8405697,-0.5690857,15z/data=!3m1!4b1!4m5!3m4!1s0xd552715cf73d35b:0x86d0eff4b8a7951e!8m2!3d44.8405565!4d-0.5603554"
-                        target="_blank">
-                        <img src="assets/lieu.png" alt="Y aller" />
-                    </a>
-                    <a href="tel:+33554685183" target="_blank">
-                        <img src="assets/phone.png" alt="Telephone" />
-                    </a>
-                </section>
+                    <h3>Nom du lieu 2</h3>
+                    <p>Description du lieu</p>
 
-                <h3>Nom du lieu 3</h3>
-                <p>Description du lieu</p>
+                    <section class="flex-container list-icons">
+                        <a
+                            href="https://khmer-street-food.eatbu.com/?lang=fr"
+                            target="_blank">
+                            <img src="assets/globe.png" alt="Site web" />
+                        </a>
+                        <a
+                            href="https://www.google.fr/maps/place/KHMER+STREET+FOOD+BORDEAUX/@44.8405697,-0.5690857,15z/data=!3m1!4b1!4m5!3m4!1s0xd552715cf73d35b:0x86d0eff4b8a7951e!8m2!3d44.8405565!4d-0.5603554"
+                            target="_blank">
+                            <img src="assets/lieu.png" alt="Y aller" />
+                        </a>
+                        <a href="tel:+33554685183" target="_blank">
+                            <img src="assets/phone.png" alt="Telephone" />
+                        </a>
+                    </section>
 
-                <section class="flex-container list-icons">
-                    <a href="https://www.wasabicafe.fr/" target="_blank">
-                        <img src="assets/globe.png" alt="Site web" />
-                    </a>
-                    <a
-                        href="https://www.google.fr/maps/place/Wasabi+Caf%C3%A9/@44.8397985,-0.5683831,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262de218d76b:0xe199092f37e92166!8m2!3d44.8397748!4d-0.5596433"
-                        target="_blank">
-                        <img src="assets/lieu.png" alt="Y aller" />
-                    </a>
-                    <a href="tel:+33556322844" target="_blank">
-                        <img src="assets/phone.png" alt="Telephone" />
-                    </a>
-                </section>
-            </section>
+                    <h3>Nom du lieu 3</h3>
+                    <p>Description du lieu</p>
 
             <section id="culturelles">
                 <h2>Activités culturelles</h2>
@@ -205,162 +300,126 @@
                     millier de personnes s’y croisent.
                 </p>
 
-                <section class="flex-container list-icons">
-                    <a href="https://darwin.camp/" target="_blank">
-                        <img src="assets/globe.png" alt="Site web" />
-                    </a>
-                    <a
-                        href="https://www.google.fr/maps/place/Darwin+Eco-syst%C3%A8me/@44.8495521,-0.5625407,17z/data=!3m1!4b1!4m5!3m4!1s0xd552881d2a1d2c5:0x2c84ad56e339ad2c!8m2!3d44.8495483!4d-0.5603467"
-                        target="_blank">
-                        <img src="assets/lieu.png" alt="Y aller" />
-                    </a>
-                    <a href="tel:+33556775206" target="_blank">
-                        <img src="assets/phone.png" alt="Telephone" />
-                    </a>
+                    <section class="flex-container list-icons">
+                        <a href="https://www.wasabicafe.fr/" target="_blank">
+                            <img src="assets/globe.png" alt="Site web" />
+                        </a>
+                        <a
+                            href="https://www.google.fr/maps/place/Wasabi+Caf%C3%A9/@44.8397985,-0.5683831,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262de218d76b:0xe199092f37e92166!8m2!3d44.8397748!4d-0.5596433"
+                            target="_blank">
+                            <img src="assets/lieu.png" alt="Y aller" />
+                        </a>
+                        <a href="tel:+33556322844" target="_blank">
+                            <img src="assets/phone.png" alt="Telephone" />
+                        </a>
+                    </section>
                 </section>
 
-                <h3>Cinéma Mégarama</h3>
-                <p>
-                    Installé dans l'ancienne gare terminus du train
-                    Paris-Orléans, le
-                    Mégarama est un cinéma multi-salles de la rive droite, avec
-                    café,
-                    vente de friandises et boissons. Outre la diffusion des
-                    sorties de
-                    films français et étrangers, vous y retrouvez la saison «
-                    Connaissance
-                    du Monde ». Films populaires et films à grands spectacles.
-                    Avant-premières avec venues d'acteurs de cinéma.
-                </p>
+                <section>
+                    <h2>Bars</h2>
+                    <h3>Nom du lieu 1</h3>
+                    <p>Description du lieu </p>
 
-                <section class="flex-container list-icons">
-                    <a href="http://bordeaux.megarama.fr/" target="_blank">
-                        <img src="assets/globe.png" alt="Site web" />
-                    </a>
-                    <a
-                        href="https://www.google.fr/maps/place/Cin%C3%A9ma+MEGARAMA+Bordeaux/@44.8417453,-0.5645152,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262d118531a3:0x21ebf1115e086901!8m2!3d44.8417555!4d-0.5613812"
-                        target="_blank">
-                        <img src="assets/lieu.png" alt="Y aller" />
-                    </a>
-                    <a href="tel:+33556406670" target="_blank">
-                        <img src="assets/phone.png" alt="Telephone" />
-                    </a>
+                    <h3>Nom du lieu 2</h3>
+                    <p>Description du lieu</p>
+
+                    <h3>Nom du lieu 3</h3>
+                    <p>Description du lieu</p>
                 </section>
 
-                <h3>Maison cantonale de la Bastide</h3>
-                <p>
-                    La Maison cantonale est un lieu à vocation polyvalente.
-                    Entièrement
-                    rénovée entre 2001 et 2006, cet édifice de style Art Nouveau
-                    a été
-                    distingué par un Ruban du patrimoine. Elle a accueilli un
-                    prétoire,
-                    une bibliothèque, un commissariat et la mairie de quartier.
-                    Aujourd'hui elle accueille des manifestations : des
-                    spectacles, des
-                    conférences, des réunions de quartiers et des activités
-                    associatives.
-                </p>
-
-                <section class="flex-container list-icons">
-                    <a
-                        href="https://www.bordeaux.fr/l6136/maison-cantonale"
-                        target="_blank">
-                        <img src="assets/globe.png" alt="Site web" />
-                    </a>
-                    <a
-                        href="https://www.google.com/maps/place/Maison+Cantonale+de+la+Bastide/@44.8415519,-0.5530279,15z/data=!4m2!3m1!1s0x0:0x9f4fba51020c6a9b?sa=X&ved=2ahUKEwiAkKHO5cX2AhVHzhoKHc09DNYQ_BJ6BAgyEAU"
-                        target="_blank">
-                        <img src="assets/lieu.png" alt="Y aller" />
-                    </a>
-                    <a href="tel:+33556102035" target="_blank">
-                        <img src="assets/phone.png" alt="Telephone" />
-                    </a>
-                </section>
-
+                <section>
+                    <h2>Activités culturelles</h2>
+                    <h3>Darwin Eco-système</h3>
+                  
                 <section id="parcs">
                     <h2>Les Parcs</h2>
                     <h3>Le Jardin Botanique</h3>
-                    <p>
-                        Le Jardin Botanique est une institution créée pour
-                        sensibiliser
-                        le public aux plantes, à la biodiversité, la nature et
-                        la gestion
-                        durable des ressources. Le but exposé est de conserver
-                        le vert.
-                        Ce lieu représente une opportunité pour maintenir le
-                        statut zen, donc
-                        le silence et la tranquilité d'esprit.
-                    </p>
+                        <p>
+                            Le Jardin Botanique est une institution créée pour
+                            sensibiliser
+                            le public aux plantes, à la biodiversité, la nature
+                            et
+                            la gestion
+                            durable des ressources. Le but exposé est de
+                            conserver
+                            le vert.
+                            Ce lieu représente une opportunité pour maintenir le
+                            statut zen, donc
+                            le silence et la tranquilité d'esprit.
+                        </p>
 
-                    <section class="flex-container list-icons">
-                        <a href="https://jardin-botanique-bordeaux.fr/"
-                            target="_blank">
-                            <img src="assets/globe.png" alt="Site web">
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Jardin+Botanique+de+Bordeaux/@44.8445804,-0.5611138,17z/data=!3m1!4b1!4m5!3m4!1s0xd55287582bb17df:0xae4bcbcef5c9f377!8m2!3d44.8445766!4d-0.5589251"
-                            target="_blank">
-                            <img src="assets/lieu.png" alt="Y aller">
-                        </a>
-                        <a href="tel:+33556521877" target="_blank">
-                            <img src="assets/phone.png" alt="Telephone">
-                        </a>
+                        <section class="flex-container list-icons">
+                            <a href="https://jardin-botanique-bordeaux.fr/"
+                                target="_blank">
+                                <img src="assets/globe.png" alt="Site web">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Jardin+Botanique+de+Bordeaux/@44.8445804,-0.5611138,17z/data=!3m1!4b1!4m5!3m4!1s0xd55287582bb17df:0xae4bcbcef5c9f377!8m2!3d44.8445766!4d-0.5589251"
+                                target="_blank">
+                                <img src="assets/lieu.png" alt="Y aller">
+                            </a>
+                            <a href="tel:+33556521877" target="_blank">
+                                <img src="assets/phone.png" alt="Telephone">
+                            </a>
+                        </section>
+
+                        <h3>Le Parc aux Angéliques</h3>
+                        <p>
+                            Le parc aux Angéliques et un lieu joli pour faire
+                            des
+                            promenades en restant
+                            en contact avec la nature et faire des piques-niques
+                            avec la famille ou les amis.
+                            Le parc tient son nom d'une fleur qui représente
+                            l'inspiration et la passion.
+                        </p>
+
+                        <section class="flex-container list-icons">
+                            <a
+                                href="https://www.bordeaux.fr/l24461/angeliques-parc-aux-"
+                                target="_blank">
+                                <img src="assets/globe.png" alt="Site web">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Parc+aux+Ang%C3%A9liques/@44.8480324,-0.5690211,16.1z/data=!4m5!3m4!1s0xd5527d52a282d59:0x37394a6158286748!8m2!3d44.8471932!4d-0.5649601"
+                                target="_blank">
+                                <img src="assets/lieu.png" alt="Y aller">
+                            </a>
+                            <a href="tel:+33556102030" target="_blank">
+                                <img src="assets/phone.png" alt="Telephone">
+                            </a>
+                        </section>
+
+                        <h3>Le parc Pinçon</h3>
+                        <p>
+                            Le parc Pinçon est un espace vert situé au coeur du
+                            quartier Bastide où les enfants
+                            peuvent jouer avec les structures de jeux. Ce lieu
+                            fait
+                            partie du projet pour replanter
+                            des arbres, conserver les différentes espèces et
+                            réduire
+                            l'effet de serre.
+                        </p>
+
+                        <section class="flex-container list-icons">
+                            <a
+                                href="https://www.bordeaux.fr/l24786/pincon-parc-"
+                                target="_blank">
+                                <img src="assets/globe.png" alt="Site web">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Parc+Pin%C3%A7on/@44.8450998,-0.5478865,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262203b62cd7:0xf1378abebdf3553d!8m2!3d44.845096!4d-0.5456978"
+                                target="_blank">
+                                <img src="assets/lieu.png" alt="Y aller">
+                            </a>
+                            <a href="tel:+33556102030" target="_blank">
+                                <img src="assets/phone.png" alt="Telephone">
+                            </a>
+                        </section>
+
                     </section>
-
-                    <h3>Le Parc aux Angéliques</h3>
-                    <p>
-                        Le parc aux Angéliques et un lieu joli pour faire des
-                        promenades en restant
-                        en contact avec la nature et faire des piques-niques
-                        avec la famille ou les amis.
-                        Le parc tient son nom d'une fleur qui représente
-                        l'inspiration et la passion.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a
-                            href="https://www.bordeaux.fr/l24461/angeliques-parc-aux-"
-                            target="_blank">
-                            <img src="assets/globe.png" alt="Site web">
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Parc+aux+Ang%C3%A9liques/@44.8480324,-0.5690211,16.1z/data=!4m5!3m4!1s0xd5527d52a282d59:0x37394a6158286748!8m2!3d44.8471932!4d-0.5649601"
-                            target="_blank">
-                            <img src="assets/lieu.png" alt="Y aller">
-                        </a>
-                        <a href="tel:+33556102030" target="_blank">
-                            <img src="assets/phone.png" alt="Telephone">
-                        </a>
-                    </section>
-
-                    <h3>Le parc Pinçon</h3>
-                    <p>
-                        Le parc Pinçon est un espace vert situé au coeur du
-                        quartier Bastide où les enfants
-                        peuvent jouer avec les structures de jeux. Ce lieu fait
-                        partie du projet pour replanter
-                        des arbres, conserver les différentes espèces et réduire
-                        l'effet de serre.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="https://www.bordeaux.fr/l24786/pincon-parc-"
-                            target="_blank">
-                            <img src="assets/globe.png" alt="Site web">
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Parc+Pin%C3%A7on/@44.8450998,-0.5478865,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262203b62cd7:0xf1378abebdf3553d!8m2!3d44.845096!4d-0.5456978"
-                            target="_blank">
-                            <img src="assets/lieu.png" alt="Y aller">
-                        </a>
-                        <a href="tel:+33556102030" target="_blank">
-                            <img src="assets/phone.png" alt="Telephone">
-                        </a>
-                    </section>
-
                 </section>
-            </section>
 
         </main>
         <!-- FOOTER -->
