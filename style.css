@@ -29,6 +29,10 @@ img {
     width: 50%;
 }
 
+main > section {
+    padding-top: 70px;
+}
+
 .flex-container {
     display: flex;
     justify-content: flex-end;
