@@ -97,7 +97,7 @@ const data4 = {
     "francais":
     {
         "title2": "Bars",
-        "texte4": ""
+        "texte4": "Le meilleur Pub pour s’ambiancer sur la rive droite de Bordeaux, situé a 200 mètres de l’arrêt Stalingrad. En terrasse, profitez des superbes couchers de soleil sur la Garonne ou à l'intérieur avec une ambiance des plus « british ». Allez y pendent les happy hour, pour leurs grande variété de bières et leurs tapas, et restez y pour manger : le service continue jusqu'à 2 heures."
     },
     "italiano":
     {
@@ -109,7 +109,7 @@ const data4 = {
 const data5 = {
     "francais":
     {
-        "texte5": ""
+        "texte5": "Si vous aimez danser sur de la musique Live, savourer votre repas « à la bonne franquette » dans une ambiance typique du folklore français n’hesitez pas à faire un tour chez Alric, on y va seul, en amoureux, entre amis ou en famille. On se retrouve autour d’un verre ou d’un plat simple, on s’égaye sous les lampions au fil de l’eau, on se croise, se rencontre et la magie s’opère doucement. La musique résonne, caresse les papilles auditives et invite chacun à partager ce fragile instant de grâce. Ils vous aceuillent du printemps jusqu'à la fin de l’automne."
     },
     "italiano":
     {
@@ -120,7 +120,7 @@ const data5 = {
 const data6 = {
     "francais":
     {
-        "texte6": ""
+        "texte6": "Offrez-vous un moment de détente dans cet ancien chantier naval datant de 1902 dans lequel on construisait des bateaux en bois. Sa brasserie élabore une gamme de bières 100 % bio produites à base de céréales bio cultivées et maltées dans le Sud-Ouest. Tout ça sans oublier sa plage, un must de farniente inattendu sur les rives de Garonne."
     },
     "italiano":
     {
