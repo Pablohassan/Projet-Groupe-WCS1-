@@ -14,6 +14,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
             rel="stylesheet">
+        <script src="burger.js"></script>
     </head>
     <body>
 
@@ -27,19 +28,20 @@
                     <h1 class="title">Bonjour le monde</h1>
                     <p class="texte">Coucou à tous et bienvenue</p>
                 </div> -->
-            <section>
-                <div class="nav">
-                    <label for="toggle">&#9776;</label>
-                    <input type="checkbox" id="toggle" />
-                    <div class="menu">
-                        <a href="#">Restaurants</a>
-                        <a href="#">Bars</a>
-                        <a href="#">Activités culturelles</a>
-                        <a href="#">Parcs</a>
-                        <a href="#"><span>Home</span></a>
-                    </div>
-                </div>
-            </section>
+        <!-- HEADER (avec navbar et doit prendre toute la largeur (sans padding ou margin)) -->
+        <header class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div class="menu">
+                <a href="#restaurants">Restaurants</a>
+                <a href="#bars">Bars</a>
+                <a href="#culturelles">Activités culturelles</a>
+                <a href="#parcs">Parcs</a>
+                <a href="#"><span>Home</span></a>
+            </div>
+        </header>
+        <!-- MAIN (avec margin, créer une classe avec du margin et l'appliquer sur main (plus sur le body))-->
+        <main>
 
             <header>
                 <h1>La Bastide</h1>
@@ -57,7 +59,6 @@
                     </div>
                 </section>
             </header>
-            <!-- <p>Le petit carousel en CSS qui va bien</p>-->
 
             <section class="carousel" aria-label="Gallery">
                 <ol class="carousel__viewport">
@@ -120,8 +121,8 @@
                     </ol>
                 </aside>
             </section>
-            <main>
-                <section>
+        
+                <section id="restaurants">
                     <h2 class="title">Restaurants</h2>
                     <h3>Siman</h3>
                     <img
@@ -209,7 +210,7 @@
                     </section>
                 </section>
 
-                <section>
+                <section id="bars">
                     <h2 class="title2">Bars</h2>
                     <h3>The Central Pub</h3>
                     <p class="texte4">
@@ -223,21 +224,21 @@
                         pour manger :
                         le service continue jusqu'à 2 heures. </p>
 
-                    <section class="flex-container list-icons">
-                        <a href="https://www.the-central-pub.com/" target="_blank">
-                            <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/The+Central+Pub/@44.8414979,-0.564169,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262d11d441a9:0x8842c84d71381dcf!8m2!3d44.8414511!4d-0.5619747"
-                            target="_blank">
-                            <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33557803800" target="_blank">
-                            <img src="assets/phone.png" alt="Telephone" />
-                        </a>
-                    </section>
+                        <section class="flex-container list-icons">
+                            <a href="https://www.the-central-pub.com/" target="_blank">
+                                <img src="assets/globe.png" alt="Site web" />
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/The+Central+Pub/@44.8414979,-0.564169,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262d11d441a9:0x8842c84d71381dcf!8m2!3d44.8414511!4d-0.5619747"
+                                target="_blank">
+                                <img src="assets/lieu.png" alt="Y aller" />
+                            </a>
+                            <a href="tel:+33557803800" target="_blank">
+                                <img src="assets/phone.png" alt="Telephone" />
+                            </a>
+                        </section>
 
-                    <h3>La Guinguette Chez Alriq</h3>
+                        <h3>La Guinguette Chez Alriq</h3>
                     <p class="texte5">
                         Si vous aimez danser sur de la musique Live, savourer
                         votre repas
@@ -298,7 +299,7 @@
                     </section>
                 </section>
 
-                <section>
+                <section id="culturelles">
                     <h2 class="title3">Activités culturelles</h2>
                     <h3>Darwin Eco-système</h3>
                     <p class="texte7">
@@ -327,7 +328,6 @@
                         jour
                         plus d’un
                         millier de personnes s’y croisent.
-                    </p>
 
                     <section class="flex-container list-icons">
                         <a href="https://darwin.camp/" target="_blank">
@@ -408,7 +408,7 @@
                         </a>
                     </section>
 
-                    <section>
+                    <section id="parcs">
                         <h2 class="title4">Parcs</h2>
                         <h3>Le Jardin Botanique</h3>
                         <p class="texte10">
@@ -494,15 +494,12 @@
                                 <img src="assets/phone.png" alt="Telephone">
                             </a>
                         </section>
-
                     </section>
                 </section>
-
-            </main>
-
-            <footer>
-                © 2022 Le Carré
-            </footer>
-            <script src="translate.js"></script>
-        </body>
-    </html>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            © 2022 Le Carré
+        </footer>
+    </body>
+</html>
