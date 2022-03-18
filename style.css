@@ -20,6 +20,33 @@ body {
     color: var(--color-primary);
 }
 
+.langWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 65px 0 0;
+}
+
+.button {
+    line-height: 16px;
+    text-decoration: none;
+    margin: 4px;
+    padding: 7px;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: #f9faf8;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border: 1px solid #c2c0c0;
+} 
+
+.button:hover {
+    padding: 7px;
+    color: #FFFFFF;
+    background-color: #dbd8d8;
+    border: 1.5px solid #d8d8d8;
+}
+
 .description {
     font-size: large;
     padding: 8px;
