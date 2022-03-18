@@ -20,7 +20,7 @@ const texteE13 = document.querySelector(".texte12");
 
 link.forEach(langue => {
     langue.addEventListener('click', () => {
-        langE1.querySelector(".active").classList.remove("active");
+        langE1.querySelector("#active").classList.remove("active");
         langue.classList.add("active");
 
         const attribut = langue.getAttribute("language");
