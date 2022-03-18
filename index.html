@@ -9,22 +9,18 @@
         <link rel="stylesheet" type="text/css" href="style-carousel.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="burger.css">
+        <link rel="stylesheet" href="contact.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <div class="container">
+        <div class="container"> </div>
             <div class="langWrap">
                 <a href="#" class="button" language="francais" id="active">🇫🇷</a>
                 <a href="#" class="button" language="italiano">🇮🇹</a>
             </div>
-
-            <!-- <div class="content">
-                    <h1 class="title">Bonjour le monde</h1>
-                    <p class="texte">Coucou à tous et bienvenue</p>
-                </div> -->
 
         <!-- HEADER (avec navbar et doit prendre toute la largeur (sans padding ou margin)) -->
         <header class="nav">
@@ -38,8 +34,6 @@
                 <a href="#"><span>Home</span></a>
             </div>
             </header>
-
-        </section>
 
         <!-- MAIN (avec margin, créer une classe avec du margin et l'appliquer sur main (plus sur le body))-->
         <main>
@@ -515,13 +509,30 @@
                     </section>
 
         </main>
+        
         <!-- FOOTER -->
         <footer>
             <hr>
-           © 2022 Le Carré : pour nous contacter, c'est par <a href="contact.html">ici !</a>
-        </footer>
+        </br>
+            <form id="contactForm">
+                <h1 class="contactTitle">Contacte-nous</h1>
+                <label1 for="name">Ton nom :</label1><br />
+                <input type="text" id="name" name="name" value="" /><br />
+                <label1 for="objet">Objet du message :</label1><br />
+                <input type="text" id="objet" name="objet" value="" /><br />
+                <label1 for="message">Message :</label1><br />
+                <textarea id="message" name="message"></textarea>
+                <br /><br />
+                <input type="submit" value="Envoyer" />
+              </form>
 
+            </br>
+              <hr>
+            </br>
+           © 2022 Le Carré</a>
+        </footer>
         <script src="burger.js"></script>
         <script src="translate.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
