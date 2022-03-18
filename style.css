@@ -8,7 +8,12 @@
 Media queries : break point 600px exemple : au dessus de 600px version écran, en dessous menu burger
 Vérifier que cela soit correct en 320px */
 }
-
+.items {
+    width: 75vw;
+    padding-right: 20px;
+    align-items: left;
+  
+}
 * {
     spacing: var(--spacing);
     margin: var(--margin);
