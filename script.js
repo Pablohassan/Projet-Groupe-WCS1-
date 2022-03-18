@@ -39,3 +39,8 @@ const message =
   "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré";
 
   
+  //function (redirection){
+   // document.location.href="Guinguette"
+  //}
+ 
+  //addEventListener('onclick')
