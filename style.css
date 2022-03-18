@@ -1,13 +1,52 @@
 :root {
 --spacing: 8px;
---margin: 16px;
---line-height: 1.5;
+/* --margin: 16px; */
+/* --line-height: 1.5; */
 --color-primary: black;
 --color-secondary: grey;
+}
 /* 
 Media queries : break point 600px exemple : au dessus de 600px version écran, en dessous menu burger
 Vérifier que cela soit correct en 320px */
+
+@media only screen and (max-width: 600px) {
+    body { 
+        margin: 5vw;
+        line-height: 1.5;
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+
+    h3 {
+        line-height: 3;
+    }
+
+    .langWrap {
+        margin: 0 4.5vw 0 ;
+    }
 }
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 10vw;
+        line-height: 1.5;
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+    
+    h3 {
+        line-height: 3;
+    }
+
+    .langWrap {
+        margin: 0 35px 0 0;
+    }
+}
+
 .items {
     width: 75vw;
     padding-right: 20px;
@@ -28,7 +67,6 @@ body {
 .langWrap {
     display: flex;
     justify-content: flex-end;
-    margin: 0 65px 0 0;
 }
 
 .button {
@@ -67,13 +105,13 @@ h3 {
     text-decoration: underline;
 }
 
-.bg-primary {
-    background-color: var(--color-secondary);
-}
+/* .bg-primary { */
+    /* background-color: var(--color-secondary); */
+/* } */
 
-.mon-element {
-    margin: calc(var(--spacing) *2 )
-}
+/* .mon-element { */
+    /* margin: calc(var(--spacing) *2 ) */
+/* } */
 
 img {
     width: 50%;
