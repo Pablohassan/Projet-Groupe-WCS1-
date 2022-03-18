@@ -36,6 +36,9 @@
     label {
       display: block;
       cursor: pointer;
+      position: relative;
+      margin: 0;
+      right: 5vw;
     }
     .menu {
       text-align: center;

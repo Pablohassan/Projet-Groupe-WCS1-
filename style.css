@@ -11,8 +11,13 @@ Vérifier que cela soit correct en 320px */
 
 @media only screen and (max-width: 600px) {
     body { 
+        font-family: 'Lora', serif;
         margin: 5vw;
         line-height: 1.5;
+    }
+
+    h1 {
+        margin-left: 1vw;
     }
 
     h2 {
@@ -24,14 +29,19 @@ Vérifier que cela soit correct en 320px */
     }
 
     .langWrap {
-        margin: 0 4.5vw 0 ;
+        margin: 0 4vw 0 ;
     }
 }
 
 @media only screen and (min-width: 600px) {
     body {
+        font-family: 'Lora', serif;
         margin: 10vw;
         line-height: 1.5;
+    }
+
+    h1 {
+        margin-left: 1vw;
     }
 
     h2 {
@@ -57,10 +67,10 @@ Vérifier que cela soit correct en 320px */
     spacing: var(--spacing);
     margin: var(--margin);
     line-height: var(--line-height);
-    font-family: 'Lora', serif;
 }
 
 body {
+    /* font-family: 'Lora', serif; */
     color: var(--color-primary);
 }
 
