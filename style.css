@@ -78,9 +78,7 @@ Vérifier que cela soit correct en 320px */
 
 
 body {
-    /* font-family: 'Lora', serif; */
     color: var(--color-primary);
-}
 
 .langWrap {
     display: flex;
@@ -135,10 +133,6 @@ img {
     width: 50%;
 }
 
-main > section {
-    padding-top: 70px;
-}
-
 .flex-container {
     display: flex;
     justify-content: flex-end;
@@ -147,7 +141,7 @@ main > section {
 }
 
 .list-icons img {
-    width: 1.2rem;
+    width: 1.5rem;
     margin: 8px;
 }
    
