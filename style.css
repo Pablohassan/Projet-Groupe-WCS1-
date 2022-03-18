@@ -1,7 +1,5 @@
 :root {
 --spacing: 8px;
---margin: 16px;
---line-height: 1.5;
 --color-primary: black;
 --color-secondary: grey;
 /* 
@@ -10,29 +8,13 @@ Vérifier que cela soit correct en 320px */
 }
 
 * {
-    spacing: var(--spacing);
-    margin: var(--margin);
-    line-height: var(--line-height);
+    margin: 8px;
     font-family: 'Lora', serif;
 }
 
 body {
     color: var(--color-primary);
-}
 
-.description {
-    font-size: large;
-    padding: 8px;
-}
-
-h2 {
-    text-align: center;
-    font-size: xx-large;
-}
-
-h3 {
-    font-size: x-large;
-    text-decoration: underline;
 }
 
 .bg-primary {
@@ -47,10 +29,6 @@ img {
     width: 50%;
 }
 
-main > section {
-    padding-top: 70px;
-}
-
 .flex-container {
     display: flex;
     justify-content: flex-end;
@@ -59,6 +37,6 @@ main > section {
 }
 
 .list-icons img {
-    width: 1.2rem;
+    width: 1.5rem;
     margin: 8px;
 }
