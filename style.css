@@ -1,9 +1,10 @@
 :root {
 --spacing: 8px;
---margin: 16px;
---line-height: 1.5;
+/* --margin: 16px; */
+/* --line-height: 1.5; */
 --color-primary: black;
 --color-secondary: grey;
+<<<<<<< HEAD
 --background-color-primary: #ffe94225;
 --background-color-secondary: #90909033;
 --background-color-ternary: #0095ff2f;
@@ -11,10 +12,61 @@
 
 
 
+=======
+}
+>>>>>>> aa677d226bee56960dda2f432b98214ce114ef3a
 /* 
 Media queries : break point 600px exemple : au dessus de 600px version écran, en dessous menu burger
 Vérifier que cela soit correct en 320px */
+
+@media only screen and (max-width: 600px) {
+    body { 
+        font-family: 'Lora', serif;
+        margin: 5vw;
+        line-height: 1.5;
+    }
+
+    h1 {
+        margin-left: 1vw;
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+
+    h3 {
+        line-height: 3;
+    }
+
+    .langWrap {
+        margin: 0 4vw 0 ;
+    }
 }
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-family: 'Lora', serif;
+        margin: 10vw;
+        line-height: 1.5;
+    }
+
+    h1 {
+        margin-left: 1vw;
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+    
+    h3 {
+        line-height: 3;
+    }
+
+    .langWrap {
+        margin: 0 35px 0 0;
+    }
+}
+
 .items {
     width: 75vw;
     padding-right: 20px;
@@ -25,18 +77,21 @@ Vérifier que cela soit correct en 320px */
     spacing: var(--spacing);
     margin: var(--margin);
     line-height: var(--line-height);
-    font-family: 'Lora', serif;
 }
 
 
 body {
+<<<<<<< HEAD
     color: var(--color-primary); 
+=======
+    /* font-family: 'Lora', serif; */
+    color: var(--color-primary);
+>>>>>>> aa677d226bee56960dda2f432b98214ce114ef3a
 }
 
 .langWrap {
     display: flex;
     justify-content: flex-end;
-    margin: 0 65px 0 0;
 }
 
 .button {
@@ -75,13 +130,13 @@ h3 {
     text-decoration: underline;
 }
 
-.bg-primary {
-    background-color: var(--color-secondary);
-}
+/* .bg-primary { */
+    /* background-color: var(--color-secondary); */
+/* } */
 
-.mon-element {
-    margin: calc(var(--spacing) *2 )
-}
+/* .mon-element { */
+    /* margin: calc(var(--spacing) *2 ) */
+/* } */
 
 img {
     width: 50%;
