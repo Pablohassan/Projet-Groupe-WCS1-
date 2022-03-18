@@ -62,7 +62,7 @@
 
             <section class="carousel" aria-label="Gallery">
                 <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0"
+                    <li onclick='redirection()' id="carousel__slide1" tabindex="1 "
                         class="carousel__slide">
                         <div class="carousel__snapper">
                             <a href="#carousel__slide4" class="carousel__prev">Go
@@ -95,6 +95,15 @@
                         <a href="#carousel__slide1" class="carousel__next">Go to
                             first slide</a>
                     </li>
+                </li>
+                <li id="carousel__slide5" tabindex="0"
+                    class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">Go to
+                        previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">Go to
+                        next slide</a>
+                </li>
                 </ol>
                 <aside class="carousel__navigation">
                     <ol class="carousel__navigation-list">
@@ -239,7 +248,7 @@
                             </a>
                         </section>
 
-                        <h3>La Guinguette Chez Alriq</h3>
+                        <h3 id="Guinguette" >La Guinguette Chez Alriq</h3>
                         <img class="items" src="assets/alirc.jpeg" alt="Photo de la Guinguette de chez Alric">
                     <p class="texte5">
                         Si vous aimez danser sur de la musique Live, savourer
