@@ -213,6 +213,22 @@ const message =
   // Ferme le menu burger à chaque click sur un lien du menu
 document.querySelectorAll(".menu a").forEach(function (element) {
     element.addEventListener("click", function () {
-      document.querySelector("#toggle").checked = false;
+      showMenu(false)
     });
   });
+
+function showMenu(menuOpen) {
+    const menu = document.getElementById('menu');
+
+    if (menuOpen) {
+        menu.classList.add('menu-show')
+        menu.classList.remove('menu-hide')
+    } else {
+        menu.classList.remove('menu-show')
+        menu.classList.add('menu-hide')
+    }
+}
+
+document.getElementById('menu-button').addEventListener('click', function () {
+    showMenu(true);
+});

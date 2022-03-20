@@ -10,8 +10,9 @@
 --background-color-quaternary: #2d5a2733; */
 }
 /* 
-Media queries : break point 600px exemple : au dessus de 600px version écran, en dessous menu burger
-Vérifier que cela soit correct en 320px */
+Media queries : Vérifier que cela soit correct en 320px */
+
+/* Mobile en dessous de 600*/
 
 @media only screen and (max-width: 600px) {
   body {
@@ -42,6 +43,9 @@ Vérifier que cela soit correct en 320px */
   }
 }
 
+/*mobile au dessus de 600*/
+
+
 @media only screen and (min-width: 600px) {
   body {
     font-family: "Lora", serif;
@@ -71,11 +75,21 @@ Vérifier que cela soit correct en 320px */
   }
 }
 
+
+/* Photos des restaurants : j'ai ajouté width 100% pour que les images soit alignés avec le texte */
 .items {
-/* width 100% pour que les images soit alignés avec le texte */
   width: 100%;
-  padding-right: 20px;
-  align-items: left;
+  height: 100%;
+  object-fit: cover; /* pour que l'image prenne toute la place de la carte */
+  background-color: black;
+}
+
+.items-left {
+    border-radius: 0.375rem 0 0 0.375rem;
+} 
+
+.items-right {
+    border-radius: 0 0.375rem 0.375rem 0;
 }
 
 /*
@@ -85,13 +99,71 @@ Vérifier que cela soit correct en 320px */
 }
 */
 
+
+/* concerne tout le monde */
 body {
   color: var(--color-primary);
 }
 
+h2 {
+    text-align: center;
+    font-size: xx-large;
+  }
+  
+  h3 {
+    font-size: x-large;
+    text-decoration: underline;
+  }
+
+
+
+/* les class */
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: min-content;
+    width: 100%;
+    margin-bottom: 6rem;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 0.375rem;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .card-infos {
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 50px;
+  }
+  
+  .hero-title-color {
+    color: rgb(57, 49, 177);
+  }
+
+  .description {
+    font-size: x-large;
+    padding: 8px;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding-bottom: 8rem;
+  }
+  
+ 
+
+  /*les drapeaux de Marie*/
+
 .langWrap {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: span 1 / span 1;
+  grid-column-start: 12;
+  grid-row-start: 1;
 }
 
 .button {
@@ -116,19 +188,16 @@ body {
 }
 
 .description {
-  font-size: large;
-  padding: 8px;
-}
-
-h2 {
-  text-align: center;
-  font-size: xx-large;
-}
-
-h3 {
   font-size: x-large;
-  text-decoration: underline;
+  padding: 8px;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  text-align: center;
+  color: rgb(66, 66, 66);
+  padding-bottom: 8rem;
 }
+
+
 
 /* .bg-primary { */
 /* background-color: var(--color-secondary); */
@@ -142,6 +211,8 @@ img {
   width: 50%;
 }
 
+/*les icones de Marie */
+
 .flex-container {
   display: flex;
   justify-content: flex-end;
@@ -153,6 +224,38 @@ img {
   width: 1.5rem;
   margin: 8px;
 }
+
+
+/*desktop taille max 1024*/
+
+@media only screen and (max-width: 1024px) {
+    .card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .card-title {
+        font-size: small;
+    }
+
+    .description {
+        padding: 4px;
+    }
+
+    .items-left {
+        border-radius: 0.375rem 0.375rem 0 0;
+    }
+
+    .items-right {
+        border-radius: 0.375rem 0.375rem 0 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+}
+
+/* à effacer ?*/
+
+
+/* Ajouts des couleurs par sections 
 
 #restaurants {
   background-color: var(--background-color-secondary);
@@ -169,3 +272,7 @@ img {
 #parcs {
   background-color: var(--background-color-quaternary);
 }
+
+*/
+
+
