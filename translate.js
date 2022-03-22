@@ -26,6 +26,9 @@ const titleE8 = document.querySelector(".navbar4");
 const titleE9 = document.querySelector(".navbar5");
 const titleE10 = document.querySelector(".formTitle");
 const texteE14 = document.querySelector(".nom");
+const texteE15 = document.querySelector(".objet");
+const texteE16 = document.querySelector(".message");
+const texteE17 = document.querySelector(".envoyer");
 
 link.forEach(langue => {
     langue.addEventListener('click', () => {
@@ -58,6 +61,9 @@ link.forEach(langue => {
         titleE9.textContent = data17[attribut].navbar5;
         titleE10.textContent = data18[attribut].formTitle;
         texteE14.textContent = data19[attribut].nom;
+        texteE15.textContent = data20[attribut].objet;
+        texteE16.textContent = data21[attribut].message;
+        texteE17.textContent = data22[attribut].envoyer;
     });
 });
 
@@ -300,22 +306,33 @@ const data19 = {
 const data20 = {
     "francais":
     {
-        "nom": "Ton nom :"
+        "objet": "Objet du message :"
     },
     "italiano":
     {
-        "nom": "Il tuo nome :"
+        "objet": "Oggetto del messaggio :"
     }
 }
 
 const data21 = {
     "francais":
     {
-        "nom": "Ton nom :"
+        "message": "Message :"
     },
     "italiano":
     {
-        "nom": "Il tuo nome :"
+        "message": "Messaggio :"
+    }
+}
+
+const data22 = {
+    "francais":
+    {
+        "envoyer": "Envoyer"
+    },
+    "italiano":
+    {
+        "envoyer": "Mandare"
     }
 }
 
@@ -327,7 +344,7 @@ document
     alert(message);
   });
 const message =
-  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré";
+  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré. Grazie per il vostro messaggio! È stato inviato alla squadra di Carré";
 
   // Ferme le menu burger à chaque click sur un lien du menu
 document.querySelectorAll(".menu a").forEach(function (element) {
