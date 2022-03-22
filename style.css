@@ -12,7 +12,7 @@
 /* 
 Media queries : Vérifier que cela soit correct en 320px */
 
-/* Mobile en dessous de 600*/
+/* Mobile en-dessous de 600*/
 
 @media only screen and (max-width: 600px) {
   body {
