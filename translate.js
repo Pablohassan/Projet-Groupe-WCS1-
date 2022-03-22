@@ -19,6 +19,13 @@ const titleE4 = document.querySelector(".title4");
 const texteE11 = document.querySelector(".texte10");
 const texteE12 = document.querySelector(".texte11");
 const texteE13 = document.querySelector(".texte12");
+const titleE5 = document.querySelector(".navbar1");
+const titleE6 = document.querySelector(".navbar2");
+const titleE7 = document.querySelector(".navbar3");
+const titleE8 = document.querySelector(".navbar4");
+const titleE9 = document.querySelector(".navbar5");
+const titleE10 = document.querySelector(".formTitle");
+const texteE14 = document.querySelector(".nom");
 
 link.forEach(langue => {
     langue.addEventListener('click', () => {
@@ -44,6 +51,13 @@ link.forEach(langue => {
         texteE11.textContent = data10[attribut].texte10;
         texteE12.textContent = data11[attribut].texte11;
         texteE13.textContent = data12[attribut].texte12;
+        titleE5.textContent = data13[attribut].navbar1;
+        titleE6.textContent = data14[attribut].navbar2;
+        titleE7.textContent = data15[attribut].navbar3;
+        titleE8.textContent = data16[attribut].navbar4;
+        titleE9.textContent = data17[attribut].navbar5;
+        titleE10.textContent = data18[attribut].formTitle;
+        texteE14.textContent = data19[attribut].nom;
     });
 });
 
@@ -174,7 +188,7 @@ const data10 = {
     "italiano":
     {
         "title4": "Parchi",
-        "texte10": "Jardin Botanique è un'istituzione nata per sensibilizzare l'opinione pubblica sulle piante, sulla biodiversità, sulla natura e sulla gestione sostenibile delle risorse. L'obiettivo dichiarato è preservare il verde. Questo luogo rappresenta un'opportunità per mantenere lo stato zen, quindi il silenzio e la tranquillità"
+        "texte10": "Jardin Botanique è un'istituzione nata per sensibilizzare l'opinione pubblica sulle piante, sulla biodiversità, sulla natura e sulla gestione sostenibile delle risorse. L'obiettivo dichiarato è preservare il verde. Questo luogo rappresenta un'opportunità per mantenere lo stato zen, quindi il silenzio e la tranquillità."
     }
 }
 
@@ -197,6 +211,111 @@ const data12 = {
     "italiano":
     {
         "texte12": "Parc Pinçon è uno spazio verde situato nel cuore del quartiere Bastide dove i bambini possono giocare con le strutture ludiche. Questo luogo fa parte del progetto per ripiantare alberi, preservare le diverse specie e ridurre l'effetto serra."
+    }
+}
+
+const data13 = {
+    "francais":
+    {
+        "navbar1": "Restaurants"
+    },
+
+    "italiano":
+    {
+        "navbar1": "Ristoranti"
+    }
+}
+
+const data14 = {
+    "francais":
+    {
+        "navbar2": "Bars"
+    },
+
+    "italiano":
+    {
+        "navbar2": "Barre"
+    }
+}
+
+const data15 = {
+    "francais":
+    {
+        "navbar3": "Activités culturelles"
+    },
+
+    "italiano":
+    {
+        "navbar3": "Attività culturali"
+    }
+}
+
+const data16 = {
+    "francais":
+    {
+        "navbar4": "Parcs"
+    },
+
+    "italiano":
+    {
+        "navbar4": "Parchi"
+    }
+}
+
+const data17 = {
+    "francais":
+    {
+        "navbar5": "Nous contacter"
+    },
+
+    "italiano":
+    {
+        "navbar5": "Contattaci"
+    }
+}
+
+const data18 = {
+    "francais":
+    {
+        "formTitle": "Contacte-nous"
+    },
+
+    "italiano":
+    {
+        "formTitle": "Contattaci"
+    }
+}
+
+const data19 = {
+    "francais":
+    {
+        "nom": "Ton nom :"
+    },
+    "italiano":
+    {
+        "nom": "Il tuo nome :"
+    }
+}
+
+const data20 = {
+    "francais":
+    {
+        "nom": "Ton nom :"
+    },
+    "italiano":
+    {
+        "nom": "Il tuo nome :"
+    }
+}
+
+const data21 = {
+    "francais":
+    {
+        "nom": "Ton nom :"
+    },
+    "italiano":
+    {
+        "nom": "Il tuo nome :"
     }
 }
 
