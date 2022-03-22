@@ -1,25 +1,102 @@
+/* concerne toute la nav*/
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  grid-column: span 1 / span 1;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
 .nav {
     border-bottom: 1px solid #EAEAEB;
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
+    height: 80px;
+    line-height: 60px;
     position: sticky;
     top: 0%;
     z-index: 50;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; 
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-content: center;
+    padding-top: 8px;
+    padding-left: 8vw;
+    padding-right: 8vw;
   }
+
+  .toggle {
+   display: none;
+  }
+
+
   .menu {
-    margin: 0 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column: span 10 / span 10;
   }
-  .menu a {
-    clear:right;
-    text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    line-height: 70px;
-  }
+
+/* concerne le menu en desktop*/
+
+
+.menu a {
+  display: inline-block;
+  position: relative;
+  clear: right;
+  text-decoration: none;
+  color:grey  ;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 32px;
+} 
+
+.menu a:before, 
+.menu a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: rgb(57, 49, 177);
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+
+
+}
+.menu a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+    
+}
+
+.menu a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.menu a:hover:before, 
+.menu a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+    margin: 2px;
+}
+
+
   span {
-    color: lightskyblue;
+    color: rgb(57, 49, 177);
   }
   label {
     margin: 0 40px 0 0;
@@ -32,7 +109,9 @@
   #toggle {
     display: none;
   }
-  @media only screen and (max-width: 600px) {
+
+  /*concerne le menu en mobile */
+@media only screen and (max-width: 1024px) {
     label {
       display: block;
       cursor: pointer;
@@ -40,7 +119,22 @@
       margin: 0;
       right: 5vw;
     }
+
+    .nav {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .logo {
+      align-items: center;
+      justify-content: center;
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+
     .menu {
+      position: absolute;
+      top: 0%;
+      left: 0%;
       text-align: center;
       width: 100%;
       display: none;
@@ -51,7 +145,38 @@
       border-bottom: 1px solid #EAEAEB;
       margin: 0;
     }
+
+    
+    .lang {
+      align-items: center;
+      justify-content: flex-start;
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    .toggle {
+      grid-column-start: 3;
+      grid-row-start: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .toggle-label {
+      height: 30px;
+    }
+
     #toggle:checked + .menu {
       display: block;
+      align-content: flex-end;
     }
+
+    .menu-show {
+      display: block;
+    }
+
+    .menu-hide {
+      display: none;
+    }
+    
   }

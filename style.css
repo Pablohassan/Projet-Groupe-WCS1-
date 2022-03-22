@@ -1,168 +1,278 @@
 :root {
---spacing: 8px;
-/* --margin: 16px; */
-/* --line-height: 1.5; */
---color-primary: black;
---color-secondary: grey;
-/* --background-color-primary: #ffe94225;
+  --spacing: 8px;
+  /* --margin: 16px; */
+  /* --line-height: 1.5; */
+  --color-primary: black;
+  --color-secondary: grey;
+  /* --background-color-primary: #ffe94225;
 --background-color-secondary: #90909033;
 --background-color-ternary: #0095ff2f;
 --background-color-quaternary: #2d5a2733; */
-
-
-
 }
 /* 
-Media queries : break point 600px exemple : au dessus de 600px version écran, en dessous menu burger
-Vérifier que cela soit correct en 320px */
+Media queries : Vérifier que cela soit correct en 320px */
+
+/* Mobile en-dessous de 600*/
 
 @media only screen and (max-width: 600px) {
-    body { 
-        font-family: 'Lora', serif;
-        margin: 5vw;
-        line-height: 1.5;
-    }
+  body {
+    font-family: "Lora", serif;
+    line-height: 1.5;
+  }
 
-    h1 {
-        margin-left: 1vw;
-    }
+  main {
+    padding: 30px;
+    margin: 5vw;
+  }
 
-    h2 {
-        line-height: 1.5;
-    }
+  h1 {
+    margin-left: 1vw;
+    text-align: center;
+  }
 
-    h3 {
-        line-height: 3;
-    }
+  h2 {
+    line-height: 1.5;
+  }
 
-    .langWrap {
-        margin: 0 4vw 0 ;
-    }
+  h3 {
+    line-height: 3;
+  }
+
+  .langWrap {
+    margin: 0 4vw 0;
+  }
 }
+
+/*mobile au dessus de 600*/
+
 
 @media only screen and (min-width: 600px) {
-    body {
-        font-family: 'Lora', serif;
-        margin: 10vw;
-        line-height: 1.5;
-    }
+  body {
+    font-family: "Lora", serif;
+    line-height: 1.5;
+  }
 
-    h1 {
-        margin-left: 1vw;
-    }
+  main {
+    padding: 20px;
+    margin: 5vw;
+  }
 
-    h2 {
-        line-height: 1.5;
-    }
-    
-    h3 {
-        line-height: 3;
-    }
+  h1 {
+    margin-left: 1vw;
+    text-align: center;
+  }
 
-    .langWrap {
-        margin: 0 35px 0 0;
-    }
+  h2 {
+    line-height: 1.5;
+  }
+
+  h3 {
+    line-height: 3;
+  }
+
+  .langWrap {
+    margin: 0 35px 0 0;
+  }
 }
 
+
+/* Photos des restaurants : j'ai ajouté width 100% pour que les images soit alignés avec le texte */
 .items {
-    width: 75vw;
-    padding-right: 20px;
-    align-items: left;
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* pour que l'image prenne toute la place de la carte */
+  background-color: black;
 }
+
+.items-left {
+    border-radius: 0.375rem 0 0 0.375rem;
+} 
+
+.items-right {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+/*
 * {
-    spacing: var(--spacing);
     margin: var(--margin);
     line-height: var(--line-height);
 }
+*/
 
 
+/* concerne tout le monde */
 body {
-    /* font-family: 'Lora', serif; */
-    color: var(--color-primary);
-}
-
-.langWrap {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.button {
-    line-height: 16px;
-    text-decoration: none;
-    margin: 4px;
-    padding: 7px;
-    font-size: 1.2em;
-    color: #000000;
-    background-color: #f9faf8;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border: 1px solid #c2c0c0;
-} 
-
-.button:hover {
-    padding: 7px;
-    color: #FFFFFF;
-    background-color: #dbd8d8;
-    border: 1.5px solid #d8d8d8;
-}
-
-.description {
-    font-size: large;
-    padding: 8px;
+  color: var(--color-primary);
 }
 
 h2 {
     text-align: center;
     font-size: xx-large;
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: x-large;
     text-decoration: underline;
+  }
+
+
+
+/* les class */
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: min-content;
+    width: 100%;
+    margin-bottom: 6rem;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 0.375rem;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .card-infos {
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 50px;
+  }
+  
+  .hero-title-color {
+    color: rgb(57, 49, 177);
+  }
+
+  .description {
+    font-size: x-large;
+    padding: 8px;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding-bottom: 8rem;
+  }
+  
+ 
+
+  /*les drapeaux de Marie*/
+
+.langWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: span 1 / span 1;
+  grid-column-start: 12;
+  grid-row-start: 1;
 }
 
+.button {
+  line-height: 16px;
+  text-decoration: none;
+  margin: 4px;
+  padding: 7px;
+  font-size: 1.2em;
+  color: #000000;
+  background-color: #f9faf8;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border: 1px solid #c2c0c0;
+}
+
+.button:hover {
+  padding: 7px;
+  color: #ffffff;
+  background-color: #dbd8d8;
+  border: 1.5px solid #d8d8d8;
+}
+
+.description {
+  font-size: x-large;
+  padding: 8px;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  text-align: center;
+  color: rgb(66, 66, 66);
+  padding-bottom: 8rem;
+}
+
+
+
 /* .bg-primary { */
-    /* background-color: var(--color-secondary); */
+/* background-color: var(--color-secondary); */
 /* } */
 
 /* .mon-element { */
-    /* margin: calc(var(--spacing) *2 ) */
+/* margin: calc(var(--spacing) *2 ) */
 /* } */
 
 img {
-    width: 50%;
+  width: 50%;
 }
 
-main > section {
-    padding-top: 70px;
-}
+/*les icones de Marie */
 
 .flex-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 16px;
 }
 
 .list-icons img {
-    width: 1.2rem;
-    margin: 8px;
+  width: 1.5rem;
+  margin: 8px;
 }
-   
+
+
+/*desktop taille max 1024*/
+
+@media only screen and (max-width: 1024px) {
+    .card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .card-title {
+        font-size: small;
+    }
+
+    .description {
+        padding: 4px;
+    }
+
+    .items-left {
+        border-radius: 0.375rem 0.375rem 0 0;
+    }
+
+    .items-right {
+        border-radius: 0.375rem 0.375rem 0 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+}
+
+/* à effacer ?*/
+
+
+/* Ajouts des couleurs par sections 
+
 #restaurants {
-    background-color: var(--background-color-secondary);
-    }
-        
+  background-color: var(--background-color-secondary);
+}
+
 #bars {
-    background-color: var(--background-color-primary);
-    }
+  background-color: var(--background-color-primary);
+}
 
-    #culturelles {
-        background-color: var(--background-color-ternary);
-        }   
+#culturelles {
+  background-color: var(--background-color-ternary);
+}
 
-    #parcs {
-            background-color: var(--background-color-quaternary);
-            }   
+#parcs {
+  background-color: var(--background-color-quaternary);
+}
+
+*/
+
+

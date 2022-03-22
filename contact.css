@@ -1,22 +1,21 @@
-body {
-  font-family: 'Lora', serif;
-}
-
 input[type=text], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc; /* couleur à définir*/
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     margin-right: 0px;
     margin-left: 0px;
     resize: vertical;
   }
-  label{margin-right: 0px;
+
+  label1 {
+    margin-right: 0px;
     margin-left: 0px;
-    width: 100%;}
+    width: 100%;
+  }
 
     input[type=submit] {
         font-family: 'Lora', serif;
@@ -42,7 +41,8 @@ input[type=text], textarea {
         max-width: 440px;
         margin:0 auto;
       }
-      h1  {
-        color: #ffc800; /* couleur à définir*/
-        width: 100%;
+
+      .contactTitle {
+        margin-bottom: 20px;
+        text-align: center;
       }

@@ -1,3 +1,5 @@
+// js relatif à a traduction du site
+
 const langE1 = document.querySelector(".langWrap");
 const link = document.querySelectorAll("a");
 const titleE1 = document.querySelector(".title");
@@ -197,3 +199,36 @@ const data12 = {
         "texte12": "Parc Pinçon è uno spazio verde situato nel cuore del quartiere Bastide dove i bambini possono giocare con le strutture ludiche. Questo luogo fa parte del progetto per ripiantare alberi, preservare le diverse specie e ridurre l'effetto serra."
     }
 }
+
+// js relatif au formulaire
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(message);
+  });
+const message =
+  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré";
+
+  // Ferme le menu burger à chaque click sur un lien du menu
+document.querySelectorAll(".menu a").forEach(function (element) {
+    element.addEventListener("click", function () {
+      showMenu(false)
+    });
+  });
+
+function showMenu(menuOpen) {
+    const menu = document.getElementById('menu');
+
+    if (menuOpen) {
+        menu.classList.add('menu-show')
+        menu.classList.remove('menu-hide')
+    } else {
+        menu.classList.remove('menu-show')
+        menu.classList.add('menu-hide')
+    }
+}
+
+document.getElementById('menu-button').addEventListener('click', function () {
+    showMenu(true);
+});
