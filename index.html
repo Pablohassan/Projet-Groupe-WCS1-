@@ -16,28 +16,44 @@
     </head>
     <body>
 
-        <div class="container"> </div>
-            <div class="langWrap">
-                <a href="#" class="button" language="francais" id="active">🇫🇷</a>
-                <a href="#" class="button" language="italiano">🇮🇹</a>
-            </div>
-
+            
         <!-- HEADER (avec navbar et doit prendre toute la largeur (sans padding ou margin)) -->
         <header class="nav">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-            <div class="menu">
+            <a href="/" class="logo">
+                <img
+                  id="logo"
+                  src="assets/logo.png"
+                  alt="Logo"
+                  class="logo"
+                />
+            </a>
+
+            <div id="menu-button" class="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="toggle-label" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+            
+            <div class="menu" id="menu">
                 <a href="#restaurants" class ="menuEffet">Restaurants</a>
                 <a href="#bars" class ="menuEffet">Bars</a>
                 <a href="#culturelles" class ="menuEffet">Activités culturelles</a>
                 <a href="#parcs" class="menuEffet">Parcs</a>
-                <a href=“#” class="menuEffet"><span>Home</span></a>
+                <a href="#contactForm" class="menuEffet">Nous contacter</a>
+                <a href="/" class="menuEffet"><span>Home</span></a>
             </div>
+
+            <div class="langWrap lang">
+                <a href="#" class="button" language="francais" id="active">🇫🇷</a>
+                <a href="#" class="button" language="italiano">🇮🇹</a>
+            </div>
+
             </header>
 
         <!-- MAIN (avec margin, créer une classe avec du margin et l'appliquer sur main (plus sur le body))-->
         <main>
-                <h1>La Bastide</h1>
+            <h1 class="hero-title">Les bonnes adresses du quartier
+                <span class="hero-title-color"><br> Bastide</span></h1>
                 <section class="description">
                     <!-- Ajouter la photo principale  -->
                     <div class="content">
@@ -121,46 +137,51 @@
                         </li>
                     </ol>
                 </aside>
+  <!-- Restaurants) -->
             </section>
-        
                 <section id="restaurants">
                     <h2 class="title">Restaurants</h2>
-                    <h3>Siman</h3>
-                    <img class="items" src="assets/restau-siman.jpeg" 
-                        alt="Photo du restaurant le Siman"/>
-                    <p class="texte1">
-                        Installez-vous confortablement et découvrez un lieu
-                        chaleureux habité
-                        par une cuisine bistronomique de qualité et un personnel
-                        professionnel
-                        et convivial. Cadre déroutant, emplacement imprenable
-                        sur la rive droite de Bordeaux et rooftop surplombant la
-                        ville, face à la célèbre Place de la Bourse… Le Siman
-                        surprend
-                        autant qu’il séduit.
-                        C’est dans cette atmosphère unique que nous vous
-                        invitons à notre
-                        table pour partager un déjeuner ou un dîner. Sans
-                        oublier nos
-                        brunchs dominicaux !
-                    </p>
+                    <div class="card">
+                        <img class="items items-left" src="assets/restau-siman.jpeg" 
+                            alt="Photo du restaurant le Siman"/>
+                        <div class="card-infos">
+                            <h3>Siman</h3>
+                            <p class="texte1">
+                                Installez-vous confortablement et découvrez un lieu
+                                chaleureux habité
+                                par une cuisine bistronomique de qualité et un personnel
+                                professionnel
+                                et convivial. Cadre déroutant, emplacement imprenable
+                                sur la rive droite de Bordeaux et rooftop surplombant la
+                                ville, face à la célèbre Place de la Bourse… Le Siman
+                                surprend
+                                autant qu’il séduit.
+                                C’est dans cette atmosphère unique que nous vous
+                                invitons à notre
+                                table pour partager un déjeuner ou un dîner. Sans
+                                oublier nos
+                                brunchs dominicaux !
+                            </p>
 
-                <section class="flex-container list-icons">
-                    <a href="https://www.siman-bordeaux.com/" target="_blank">
-                        <img src="assets/globe.png" alt="Site web" />
-                    </a>
-                    <a
-                        href="https://www.google.fr/maps/place/Le+Siman/@44.8417682,-0.5710375,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262d121989c7:0xb4beb44d88ff65cd!8m2!3d44.8417466!4d-0.5623146"
-                        target="_blank">
-                        <img src="assets/lieu.png" alt="Y aller" />
-                    </a>
-                    <a href="tel:+33556674990" target="_blank">
-                        <img src="assets/phone.png" alt="Telephone" />
-                    </a>
-                </section>
-
-                    <h3>Khmer Street Food Bordeaux</h3>
-                    <img class="items" src="assets/resteau-street.jpeg " alt="Photo du restaurant Khmer stree food">
+                    <section class="flex-container list-icons">
+                        <a href="https://www.siman-bordeaux.com/" target="_blank">
+                            <img src="assets/globe.png" alt="Site web" />
+                        </a>
+                        <a
+                            href="https://www.google.fr/maps/place/Le+Siman/@44.8417682,-0.5710375,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262d121989c7:0xb4beb44d88ff65cd!8m2!3d44.8417466!4d-0.5623146"
+                            target="_blank">
+                            <img src="assets/lieu.png" alt="Y aller" />
+                        </a>
+                        <a href="tel:+33556674990" target="_blank">
+                            <img src="assets/phone.png" alt="Telephone" />
+                        </a>
+                    </section>
+                </div>
+            </div>
+        
+                <div class="card">
+                    <div class="card-infos">
+                        <h3>Khmer Street Food Bordeaux</h3>
                     <p class="texte2">
                         Restaurant Street Food du Cambodge et Bar. Ambiance
                         familiale et accueil chaleureux. Cuisine et sauces faites
@@ -184,6 +205,9 @@
                             <img src="assets/phone.png" alt="Telephone" />
                         </a>
                     </section>
+                </div>
+                <img class="items items-right" src="assets/resteau-street.jpeg " alt="Photo du restaurant Khmer stree food">
+                </div>
         
                     <h3>Wasabi Café</h3>
                     <img class="items" src="assets/restau-wasabi.jpeg" alt="Photo du Restaurant le Wasabi café">
@@ -210,7 +234,7 @@
                         </a>
                     </section>
                 </section>
-
+  <!-- Bars -->
                 <section id="bars">
                     <h2 class="title2">Bars</h2>
                     <h3>The Central Pub</h3>
@@ -303,7 +327,7 @@
                         </a>
                     </section>
                 </section>
-
+  <!-- Activitées culturelles-->
                 <section id="culturelles">
                     <h2 class="title3">Activités culturelles</h2>
                     <h3>Darwin Eco-système</h3>
@@ -416,7 +440,7 @@
                         </a>
                     </section>
                     </section>
-
+  <!-- parcs-->
                     <section id="parcs">
                         <h2 class="title4">Parcs</h2>
                         <h3>Le Jardin Botanique</h3>
