@@ -32,7 +32,7 @@ document
     alert(message);
   });
 const message =
-  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré. Grazie per il vostro messaggio! È stato inviato alla squadra di Carré";
+  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré. Grazie per il tuo messaggio! È stato inviato alla squadra di Carré";
 
   // Ferme le menu burger à chaque click sur un lien du menu
 document.querySelectorAll(".menu a").forEach(function (element) {
