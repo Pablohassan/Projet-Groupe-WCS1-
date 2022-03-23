@@ -249,4 +249,7 @@ img {
   .card-infos {
     padding: 1.2rem;
   }
+  .alignTitreHome {
+    padding-top: 50px;
+  }
 }

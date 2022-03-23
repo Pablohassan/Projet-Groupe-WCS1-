@@ -62,6 +62,6 @@ var desktop= window.matchMedia("(min-width: 600px)");
 
 if(desktop.matches) {
 
-    let darwin= document.getElementById("darwin");
+    const darwin= document.getElementById("darwin");
     darwin.innerHTML='<img id="darwin" src="assets/logo.png" alt="Site web"/>';
  };
