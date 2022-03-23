@@ -370,8 +370,7 @@ document.getElementById('menu-button').addEventListener('click', function () {
 });
 
 
-// var desktop= window.matchMedia("(min-width: 600px)");
+var desktop= window.matchMedia("(min-width: 600px)");
 
-// if(desktop.matches) {
-//     document.getElementById("darwin").innerHTML='<input type="text"/><img id="darwin" src="assets/logo.png" alt="Site web" />';
-// };
+if(desktop.matches) {
+    document.getElementById("darwin").innerHTML='<input type="text"/><img id="darwin" src="assets/logo.png" alt="Site web"/>'; };
