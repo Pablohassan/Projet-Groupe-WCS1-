@@ -58,10 +58,23 @@ document.getElementById('menu-button').addEventListener('click', function () {
 });
 
 
-var desktop= window.matchMedia("(min-width: 600px)");
+// var desktop= window.matchMedia("(min-width: 600px)");
 
-if(desktop.matches) {
+// if(desktop.matches) {
+//     const darwin = document.getElementById("darwin");
+//     darwin.src = "assets/logo.png";
+//  };
 
-    const darwin= document.getElementById("darwin");
-    darwin.innerHTML='<img id="darwin" src="assets/logo.png" alt="Site web"/>';
- };
+// const onResize = () => {
+//     document.querySelectorAll(".responsive-img").forEach((image) => {
+//         if (window.innerWidth > 1024) {
+//             darwin.src = "assets/logo.png";
+//          } else {
+//             darwin.src = "assets/activites-darwin2.jpeg";
+//          }
+//     })
+// }
+
+// window.onresize = onResize;
+
+ 
