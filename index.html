@@ -15,7 +15,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     </head>
     <body>
-
             
         <!-- HEADER (avec navbar et doit prendre toute la largeur (sans padding ou margin)) -->
         <header class="nav">
@@ -33,22 +32,24 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </div>
-            
+
+            <div class="langWrap">
+                <button class="lang-switch" data-lang="fr">🇫🇷</button>
+                <button class="lang-switch" data-lang="it">🇮🇹</button>
+            </div>
+
             <div class="menu" id="menu">
-                <a href="#restaurants" class ="menuEffet navbar1">Restaurants</a>
-                <a href="#bars" class ="menuEffet navbar2">Bars</a>
-                <a href="#culturelles" class ="menuEffet navbar3">Activités culturelles</a>
-                <a href="#parcs" class="menuEffet navbar4">Parcs</a>
-                <a href="#contactForm" class="menuEffet navbar5">Nous contacter</a>
+                <a href="#restaurants" class ="menuEffet" data-lang="fr">Restaurants</a>
+                <!-- <a href="#restaurants" class ="menuEffet" data-lang="it">Ristoranti</a> -->
+                <a href="#bars" class ="menuEffet" data-lang="fr">Bars</a>
+                <!-- <a href="#bars" class ="menuEffet" data-lang="it">Barre</a> -->
+                <a href="#culturelles" class ="menuEffet">Activités culturelles</a>
+                <a href="#parcs" class="menuEffet">Parcs</a>
+                <a href="#contactForm" class="menuEffet">Nous contacter</a>
                 <a href="/" class="menuEffet"><span>Home</span></a>
             </div>
 
-            <div class="langWrap lang">
-                <a href="#" class="button" language="francais" id="active">🇫🇷</a>
-                <a href="#" class="button" language="italiano">🇮🇹</a>
-            </div>
-
-            </header>
+    </header>
 
         <!-- MAIN (avec margin, créer une classe avec du margin et l'appliquer sur main (plus sur le body))-->
         <main>
@@ -56,13 +57,18 @@
                 <section class="description">
                     <div class="content">
                         <!-- classes texte servent pour switcher en italien-->
-                        <p class="texte">Que vous soyez de passage sur
-                            Bordeaux ou non, voici un
-                            site répertoriant quelques bonnes adresses du
-                            quartier Bastide.
+                        <p data-lang="fr">Que vous soyez de passage sur
+                            Bordeaux ou non, voici un site répertoriant
+                            quelques bonnes adresses du quartier Bastide.
                             N’hésitez pas à nous faire vos retours sur les
-                            endroits que nous
-                            avons sélectionnés pour vous !</p>
+                            endroits que nous avons sélectionnés pour vous !
+                        </p>
+                        <p data-lang="it">
+                            Che tu sia di passaggio o meno a Bordeaux, ecco
+                            un sito che elenca alcuni buoni indirizzi nel
+                            quartiere di Bastide. Non esitare a darci il tuo
+                            feedback sui luoghi che abbiamo selezionato per te!
+                        </p>
                     </div>
                 </section>
 
@@ -138,27 +144,32 @@
   <!-- Restaurants) -->
             </section>
                 <section id="restaurants">
-                    <h2 class="title">Les restaurants qui vont vous donner envie de revenir</h2>
+                    <h2 data-lang="fr">Les restaurants qui vont vous donner envie de revenir</h2>
+                    <h2 data-lang="it">Ristoranti</h2> <!-- A traduire mieux-->
                     <div class="card">
                         <img class="items items-left" src="assets/restau-siman.jpeg" 
                             alt="Photo du restaurant le Siman"/>
                         <div class="card-infos">
                             <h3>Le Siman</h3>
-                            <p class="texte1">
+                            <p data-lang="fr">
                                 Installez-vous confortablement et découvrez un lieu
-                                chaleureux habité
-                                par une cuisine bistronomique de qualité et un personnel
-                                professionnel
-                                et convivial. Cadre déroutant, emplacement imprenable
-                                sur la rive droite de Bordeaux et rooftop surplombant la
-                                ville, face à la célèbre Place de la Bourse… Le Siman
-                                surprend
-                                autant qu’il séduit.
-                                C’est dans cette atmosphère unique que nous vous
-                                invitons à notre
+                                chaleureux habité par une cuisine bistronomique de qualité
+                                et un personnel professionnel et convivial. Cadre déroutant,
+                                emplacement imprenable sur la rive droite de Bordeaux et rooftop
+                                surplombant la ville, face à la célèbre Place de la Bourse… Le Siman
+                                surprend autant qu’il séduit.
+                                C’est dans cette atmosphère unique que nous vous invitons à notre
                                 table pour partager un déjeuner ou un dîner. Sans
-                                oublier nos
-                                brunchs dominicaux !
+                                oublier nos brunchs dominicaux !
+                            </p>
+                            <p data-lang="it">
+                                Mettiti comodo e scopri un luogo accogliente attrezzato di una
+                                cucina bistrot di qualità e uno staff professionale e cordiale.
+                                Ambiente confuso, con una posizione inespugnabile sulla riva destra
+                                di Bordeaux e un tetto che domina la città, di fronte alla famosa Place
+                                de la Bourse. Le Siman sorprende tanto quanto seduce. È in questa atmosfera
+                                unica che vi invitiamo alla nostra tavola per condividere il pranzo o la cena.
+                                Per non parlare dei nostri brunch domenicali!
                             </p>
 
                     <section class="flex-container list-icons">
@@ -180,13 +191,20 @@
                 <div class="card">
                     <div class="card-infos">
                         <h3>Khmer Street Food Bordeaux</h3>
-                    <p class="texte2">
+                    <p data-lang="fr">
                         Restaurant Street Food du Cambodge et Bar. Ambiance
                         familiale et accueil chaleureux. Cuisine et sauces faites
                         maison à  base de produits frais Tous nos plats sont servis
                         rapidement et se dégustent sur place en salle ou en terrasse.
                         Vous pouvez également les emporter ou vous faire livrer par nos
                         partenaires.</p>
+                    <p data-lang="it">
+                        Ristorante e bar con cibo di strada cambogiano con ambiente familiare
+                        e calda accoglienza. Cucina casalinga e salse a base di prodotti freschi.
+                        Tutti i nostri piatti vengono serviti velocemente e possono essere consumati
+                        nella sala da pranzo o in terrazza. Puoi anche portarli via o farteli consegnare
+                        dai nostri partner.
+                    </p>
 
                     <section class="flex-container list-icons">
                         <a
@@ -211,7 +229,7 @@
                     <img class="items items-left" src="assets/restau-wasabi.jpeg" alt="Photo du Restaurant le Wasabi café">
                     <div class="card-infos">  
                     <h3>Wasabi Café</h3>
-                    <p class="texte3">
+                    <p data-lang="fr">
                         Le Wasabi Café est l'un des plus anciens restaurants
                         japonais de Bordeaux, créé en 2003. Notre credo : vous
                         proposer des plats typiquement japonais à partir de produits
@@ -219,6 +237,13 @@
                         vous proposer un voyage à travers la gastronomie japonaise. Nos
                         chefs expérimentés et notre carte de vins et boissons rendront
                         cette expérience unique.</p>
+                    <p data-lang="it">
+                        Il Wasabi Café è uno dei più antichi ristoranti giapponesi di Bordeaux,
+                        nato nel 2003. Il nostro credo: offrirti piatti tipici giapponesi con
+                        prodotti freschi e di qualità durante tutto l'anno. Il nostro obiettivo:
+                        offrirti un viaggio attraverso la gastronomia giapponese. I nostri chef
+                        esperti e la nostra carta dei vini e delle bevande renderanno questa esperienza unica.
+                    </p>
 
                     <section class="flex-container list-icons">
                         <a href="https://www.wasabicafe.fr/" target="_blank">
@@ -239,20 +264,27 @@
                 
   <!-- Bars -->
                 <section id="bars">
-                    <h2 class="title2">La liste (non-exhaustive) des bars à connaître</h2>
+                    <h2 data-lang="fr">La liste (non-exhaustive) des bars à connaître</h2>
+                    <h2 data-lang="it">Barre</h2>
                     <h3>The Central Pub</h3>
                     <div class="card">
                         <div class="card-infos">
-                    <p class="texte4">
+                    <p data-lang="fr">
                         Le meilleur Pub pour s’ambiancer sur la rive droite
                         de Bordeaux, situé a 200 mètres de l’arrêt Stalingrad.
                         En terrasse, profitez des superbes couchers de soleil
                         sur la Garonne ou à l'intérieur avec une ambiance des
                         plus « british ». Allez y pendent les happy hour, pour
-                        leurs
-                        grande variété de bières et leurs tapas, et restez y
-                        pour manger :
-                        le service continue jusqu'à 2 heures. </p>
+                        leurs grande variété de bières et leurs tapas, et restez y
+                        pour manger : le service continue jusqu'à 2 heures. </p>
+                    <p data-lang="it">
+                        Il miglior Pub per divertirsi sulla riva destra di Bordeaux,
+                        situato a 200 metri dalla fermata Stalingrad. Sulla terrazza,
+                        goditi gli splendidi tramonti sulla Garonna o all'interno con
+                        un'atmosfera molto « british ». Andateci durante l'happy hour,
+                        per la loro ampia varietà di birre e tapas, e restate lì a mangiare:
+                        il servizio continua fino alle 2 del mattino.
+                    </p>
 
                         <section class="flex-container list-icons">
                             <a href="https://www.the-central-pub.com/" target="_blank">
@@ -277,24 +309,25 @@
                             <img class="items items-left" src="assets/alirc.jpeg" alt="Photo de la Guinguette de chez Alric">
                             <div class="card-infos">
                         
-                    <p class="texte5">
+                    <p data-lang="fr">
                         Si vous aimez danser sur de la musique Live, savourer
-                        votre repas
-                        « à la bonne franquette » dans une ambiance typique du
-                        folklore
-                        français n’hesitez pas à faire un tour chez Alriq, on y
-                        va seul,
-                        en amoureux, entre amis ou en famille. On se retrouve
-                        autour d’un
-                        verre ou d’un plat simple, on s’égaye sous les lampions
-                        au fil de
-                        l’eau, on se croise, se rencontre et la magie s’opère
-                        doucement.
-                        La musique résonne, caresse les papilles auditives et
-                        invite chacun
-                        à partager ce fragile instant de grâce. Ils vous
-                        aceuillent du printemps
-                        jusqu'à la fin de l’automne.</p>
+                        votre repas « à la bonne franquette » dans une ambiance
+                        typique du folklore français n’hesitez pas à faire un tour
+                        chez Alriq, on y va seul, en amoureux, entre amis ou en famille.
+                        On se retrouve autour d’un verre ou d’un plat simple, on s’égaye
+                        sous les lampions au fil de l’eau, on se croise, se rencontre et la
+                        magie s’opère doucement. La musique résonne, caresse les papilles auditives
+                        et invite chacun à partager ce fragile instant de grâce. Ils vous
+                        aceuillent du printemps jusqu'à la fin de l’automne.</p>
+                    <p data-lang="it">
+                        Se ti piace ballare con musica dal vivo, assaporare il tuo pasto « à la bonne
+                        franquette » in un'atmosfera tipica del folklore francese, non esitare a visitare
+                        Alric: si va da soli, in coppia, con gli amici o la famiglia. Ci si incontra attorno
+                        a un drink o un semplice piatto, ci si rallegra sotto le lanterne sull'acqua, ci si
+                        incrocia, ci si incontra e la magia avviene lentamente. La musica risuona, accarezza
+                        le papille gustative uditive e invita tutti a condividere questo fragile momento di
+                        grazia. Si è accolti dalla primavera fino alla fine dell'autunno.
+                    </p>
 
                     <section class="flex-container list-icons">
                         <a href="https://www.laguinguettechezalriq.com/" target="_blank">
@@ -316,16 +349,20 @@
                     <div class="card">
                         
                     <div class="card-infos">
-                    <p class="texte6">
+                    <p data-lang="fr">
                         Offrez-vous un moment de détente dans cet ancien
-                        chantier naval datant de
-                        1902 dans lequel on construisait des bateaux en bois. Sa
-                        brasserie élabore
-                        une gamme de bières 100 % bio produites à base de
-                        céréales bio cultivées et
-                        maltées dans le Sud-Ouest. Tout ça sans oublier sa
-                        plage, un must de farniente
+                        chantier naval datant de 1902 dans lequel on construisait
+                        des bateaux en bois. Sa brasserie élabore une gamme de bières
+                        100 % bio produites à base de céréales bio cultivées et maltées
+                        dans le Sud-Ouest. Tout ça sans oublier sa plage, un must de farniente
                         inattendu sur les rives de Garonne.</p>
+                    <p data-lang="it">
+                        Regalati un momento di relax in questo ex cantiere navale del 1902 dove
+                        venivano costruite barche di legno. Il suo birrificio produce una gamma
+                        di birre biologiche al 100% prodotte da cereali biologici coltivati e maltati
+                        nel sud-ovest. Tutto questo senza dimenticare la sua spiaggia, tappa obbligata
+                        per ozio inaspettato sulle rive della Garonna.
+                    </p>
 
                     <section class="flex-container list-icons">
                         <a href="https://leschantiersdelagaronne.camp/" target="_blank">
@@ -346,38 +383,34 @@
                 </section>
   <!-- Activitées culturelles-->
                 <section id="culturelles">
-                    <h2 class="title3">Quelques activités culturelles pour digérer</h2>
+                    <h2 data-lang="fr">Quelques activités culturelles pour digérer</h2>
+                    <h2 data-lang="it">Attività culturali</h2>
                     <h3>Darwin Eco-système</h3>
                     <div class="card">
                         <img class="items items-left" src="assets/activites-darwin2.jpeg" alt="Image du centre culturel Darwin">
                         <div class="card-infos">
                     
-                    <p class="texte7">
-                        Darwin est un lieu alternatif de la rive-droite de
-                        Bordeaux.
-                        Cette
-                        ancienne caserne désaffectée est aujourd’hui
-                        éco-réhabilitée. Sur plus
-                        de 3 hectares, Darwin organise la collaboration entre
-                        les
-                        acteurs du
-                        territoire contribuant à la transition vers des modèles
-                        de
-                        société
-                        plus coopératifs et résilients. Pans entiers de murs
-                        dédiés
-                        au
-                        street-art, skate-park, restaurant et épicerie bio,ferme
-                        urbaine,
-                        espaces de coworking, pépinière d’entreprises, ateliers
-                        de
-                        réparation
-                        de vélos, club et terrain de roller-derby, salles de
-                        conférences,
-                        concerts… Darwin est un véritable écosystème où chaque
-                        jour
-                        plus d’un
+                    <p data-lang="fr">
+                        Darwin est un lieu alternatif de la rive-droite de Bordeaux.
+                        Cette ancienne caserne désaffectée est aujourd’hui
+                        éco-réhabilitée. Sur plus de 3 hectares, Darwin organise la
+                        collaboration entre les acteurs du territoire contribuant à la
+                        transition vers des modèles de société plus coopératifs et résilients.
+                        Pans entiers de murs dédiés au street-art, skate-park, restaurant et
+                        épicerie bio, ferme urbaine, espaces de coworking, pépinière d’entreprises, 
+                        ateliers de réparation de vélos, club et terrain de roller-derby, salles de
+                        conférences, concerts… Darwin est un véritable écosystème où chaque jour plus d’un
                         millier de personnes s’y croisent. </p>
+                    <p data-lang="it">
+                        Darwin è un luogo alternativo sulla riva destra di Bordeaux. Questa ex caserma in
+                        disuso è ora eco-riabilitata. Su più di 3 ettari, Darwin organizza la collaborazione
+                        tra gli attori del territorio contribuendo alla transizione verso modelli di società
+                        più cooperativi e resilienti. Ci sono intere sezioni di pareti dedicate alla street-art,
+                         uno skate-park, un ristorante e negozio di alimentari biologici, l’urban farm, spazi di
+                         coworking, un’incubatore aziendale, officine di riparazione per biciclette, un roller-derby
+                         club, sale conferenze e concerti. Darwin è un vero ecosistema dove ogni giorno si incontrano
+                         più di 1000 persone.
+                    </p>
 
                     <section class="flex-container list-icons">
                         <a href="https://darwin.camp/" target="_blank">
@@ -398,20 +431,20 @@
                     <h3>Cinéma Mégarama</h3>
                     <div class="card">
                         <div class="card-infos">
-                    <p class="texte8">
+                    <p data-lang="fr">
                         Installé dans l'ancienne gare terminus du train
-                        Paris-Orléans, le
-                        Mégarama est un cinéma multi-salles de la rive droite,
-                        avec
-                        café,
-                        vente de friandises et boissons. Outre la diffusion des
-                        sorties de
-                        films français et étrangers, vous y retrouvez la saison
-                        «
-                        Connaissance
-                        du Monde ». Films populaires et films à grands
-                        spectacles.
-                        Avant-premières avec venues d'acteurs de cinéma.
+                        Paris-Orléans, le Mégarama est un cinéma multi-salles
+                        de la rive droite, avec café, vente de friandises et boissons.
+                        Outre la diffusion des sorties de films français et étrangers,
+                        vous y retrouvez la saison « Connaissance du Monde ». Films populaires
+                        et films à grands spectacles. Avant-premières avec venues d'acteurs de cinéma.
+                    </p>
+                    <p data-lang="it">
+                        Installato nell'ex stazione capolinea del treno Parigi-Orléans, il Mégarama
+                        è un cinema multisala sulla riva destra con caffetteria, vendita di dolci e
+                        bevande. Oltre alla proiezione delle uscite cinematografiche francesi e straniere,
+                        troverai lì la stagione « Connaissance du Monde ». Film popolari e di successo e
+                        anteprime con l’apparizione di attori cinematografici.
                     </p>
 
                     <section class="flex-container list-icons">
@@ -436,21 +469,20 @@
                         <img class="items items-left" src="assets/Maison-cantonale.jpeg" alt="Image de la maison cantonale">
                         <div class="card-infos">
                     
-                    <p class="texte9">
+                    <p data-lang="fr">
                         La Maison cantonale est un lieu à vocation polyvalente.
-                        Entièrement
-                        rénovée entre 2001 et 2006, cet édifice de style Art
-                        Nouveau
-                        a été
-                        distingué par un Ruban du patrimoine. Elle a accueilli
-                        un
-                        prétoire,
-                        une bibliothèque, un commissariat et la mairie de
-                        quartier.
-                        Aujourd'hui elle accueille des manifestations : des
-                        spectacles, des
-                        conférences, des réunions de quartiers et des activités
-                        associatives.
+                        Entièrement rénovée entre 2001 et 2006, cet édifice de style Art
+                        Nouveau a été distingué par un Ruban du patrimoine. Elle a accueilli
+                        un prétoire, une bibliothèque, un commissariat et la mairie de quartier.
+                        Aujourd'hui elle accueille des manifestations : des spectacles, des conférences,
+                        des réunions de quartiers et des activités associatives.
+                    </p>
+                    <p data-lang="it">
+                        La Maison cantonale è un luogo polivalente. Interamente ristrutturato tra il 2001 e
+                        il 2006, questo edificio in stile Art Nouveau è stato insignito dell'Heritage Ribbon.
+                        Ospitava un'aula di tribunale, una biblioteca, una stazione di polizia e il municipio
+                        distrettuale. Oggi ospita eventi,  spettacoli, convegni, incontri di quartiere e attività
+                        associative.
                     </p>
 
                     <section class="flex-container list-icons">
@@ -473,22 +505,24 @@
                     </section>
   <!-- parcs-->
                     <section id="parcs">
-                        <h2 class="title4">Promenez-vous dans les parcs Bastidiens</h2>
+                        <h2 data-lang="fr">Promenez-vous dans les parcs Bastidiens</h2>
+                        <h2 data-lang="it">Parchi</h2>
                         <h3>Le Jardin Botanique</h3>
                         <div class="card">
                             <div class="card-infos">
-                        <p class="texte10">
-                            Le Jardin Botanique est une institution créée pour
-                            sensibiliser
-                            le public aux plantes, à la biodiversité, la nature
-                            et
-                            la gestion
-                            durable des ressources. Le but exposé est de
-                            conserver
-                            le vert.
-                            Ce lieu représente une opportunité pour maintenir le
-                            statut zen, donc
-                            le silence et la tranquilité d'esprit.
+                        <p data-lang="fr">
+                            Le Jardin Botanique est une institution créée pour sensibiliser
+                            le public aux plantes, à la biodiversité, la nature et la gestion
+                            durable des ressources. Le but exposé est de conserver le vert.
+                            Ce lieu représente une opportunité pour maintenir le statut zen,
+                            donc le silence et la tranquilité d'esprit.
+                        </p>
+                        <p data-lang="it">
+                            Jardin Botanique è un'istituzione nata per sensibilizzare l'opinione
+                            pubblica sulle piante, sulla biodiversità, sulla natura e sulla gestione
+                            sostenibile delle risorse. L'obiettivo dichiarato è preservare il verde.
+                            Questo luogo rappresenta un'opportunità per mantenere lo stato zen, quindi
+                            il silenzio e la tranquillità.
                         </p>
 
                         <section class="flex-container list-icons">
@@ -513,14 +547,16 @@
                         <div class="card">
                             <img class="items items-left" src="assets/activites-darwin.jpeg" alt="Image du parc du Parc aux angeliques">
                             <div class="card-infos">
-                        <p class="texte11">
-                            Le parc aux Angéliques et un lieu joli pour faire
-                            des
-                            promenades en restant
-                            en contact avec la nature et faire des piques-niques
-                            avec la famille ou les amis.
-                            Le parc tient son nom d'une fleur qui représente
-                            l'inspiration et la passion.
+                        <p data-lang="fr">
+                            Le parc aux Angéliques et un lieu joli pour faire des
+                            promenades en restant en contact avec la nature et faire
+                            des piques-niques avec la famille ou les amis. Le parc tient
+                            son nom d'une fleur qui représente l'inspiration et la passion.
+                        </p>
+                        <p data-lang="it">
+                            Parc aux Angéliques è un bel posto dove fare passeggiate rimanendo
+                            a contatto con la natura e fare picnic con la famiglia o gli amici.
+                            Il parco prende il nome da un fiore che rappresenta l’ispirazione e la passione.
                         </p>
 
                         <section class="flex-container list-icons">
@@ -544,15 +580,17 @@
                         <h3>Le parc Pinçon</h3>
                         <div class="card">
                             <div class="card-infos">
-                        <p class="texte12">
-                            Le parc Pinçon est un espace vert situé au coeur du
-                            quartier Bastide où les enfants
-                            peuvent jouer avec les structures de jeux. Ce lieu
-                            fait
-                            partie du projet pour replanter
-                            des arbres, conserver les différentes espèces et
-                            réduire
-                            l'effet de serre.
+                        <p data-lang="fr">
+                            Le parc Pinçon est un espace vert situé au coeur du quartier
+                            Bastide où les enfants peuvent jouer avec les structures de jeux.
+                            Ce lieu fait partie du projet pour replanter des arbres, conserver
+                            les différentes espèces et réduire l'effet de serre.
+                        </p>
+                        <p data-lang="it">
+                            Parc Pinçon è uno spazio verde situato nel cuore del quartiere Bastide
+                            dove i bambini possono giocare con le strutture ludiche. Questo luogo
+                            fa parte del progetto per ripiantare alberi, preservare le diverse specie
+                            e ridurre l'effetto serra.
                         </p>
 
                         <section class="flex-container list-icons">
@@ -582,12 +620,16 @@
             <hr>
         </br>
             <form id="contactForm">
-                <h1 class="contactTitle formTitle">Contacte-nous</h1>
-                <label1 for="name" class="nom">Ton nom :</label1><br />
+                <h1 class="contactTitle" data-lang="fr">Contacte-nous</h1>
+                <h1 class="contactTitle" data-lang="it">Contattaci</h1>
+                <label1 for="name" data-lang="fr">Ton nom :</label1><br />
+                <label1 for="name" data-lang="it">l tuo nome :</label1><br />
                 <input type="text" id="name" name="name" value="" /><br />
-                <label1 for="objet" class="objet">Objet du message :</label1><br />
+                <label1 for="objet" data-lang="fr">Objet du message :</label1><br />
+                <label1 for="objet" data-lang="it">Oggetto del messaggio :</label1><br />
                 <input type="text" id="objet" name="objet" value="" /><br />
-                <label1 for="message" class="message">Message :</label1><br />
+                <label1 for="message" data-lang="fr">Message :</label1><br />
+                <label1 for="message" data-lang="it">Messaggio :</label1><br />
                 <textarea id="message" name="message"></textarea>
                 <br /><br />
                 <input type="submit" value="Send" />

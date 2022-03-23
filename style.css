@@ -12,6 +12,11 @@
 /* 
 Media queries : Vérifier que cela soit correct en 320px */
 
+/* Pour la traduction */
+.d-none {
+    display: none;
+  }
+
 /* Mobile en-dessous de 600*/
 
 @media only screen and (max-width: 600px) {
@@ -171,7 +176,7 @@ h2 {
   grid-row-start: 1;
 }
 
-.button {
+button {
   line-height: 16px;
   text-decoration: none;
   margin: 4px;
@@ -185,7 +190,7 @@ h2 {
   border: 1px solid #c2c0c0;
 }
 
-.button:hover {
+button:hover {
   padding: 7px;
   color: #ffffff;
   background-color: #dbd8d8;
