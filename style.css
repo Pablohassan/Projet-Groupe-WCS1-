@@ -137,7 +137,7 @@ h3 {
   grid-row-start: 1;
 }
 
-button {
+.lang-switch {
   line-height: 16px;
   text-decoration: none;
   margin: 4px;
@@ -151,7 +151,7 @@ button {
   border: 1px solid #c2c0c0;
 }
 
-button:hover {
+.lang-switch:hover {
   padding: 7px;
   color: #ffffff;
   background-color: #dbd8d8;
