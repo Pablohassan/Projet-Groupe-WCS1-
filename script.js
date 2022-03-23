@@ -368,3 +368,10 @@ function showMenu(menuOpen) {
 document.getElementById('menu-button').addEventListener('click', function () {
     showMenu(true);
 });
+
+
+// var desktop= window.matchMedia("(min-width: 600px)");
+
+// if(desktop.matches) {
+//     document.getElementById("darwin").innerHTML='<input type="text"/><img id="darwin" src="assets/logo.png" alt="Site web" />';
+// };
