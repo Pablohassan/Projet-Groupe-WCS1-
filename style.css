@@ -1,14 +1,14 @@
-:root {
-  --spacing: 8px;
+/* :root { */
+  /* --spacing: 8px; */
   /* --margin: 16px; */
   /* --line-height: 1.5; */
-  --color-primary: black;
-  --color-secondary: grey;
+  /* --color-primary: black; */
+  /* --color-secondary: grey; */
   /* --background-color-primary: #ffe94225;
 --background-color-secondary: #90909033;
 --background-color-ternary: #0095ff2f;
 --background-color-quaternary: #2d5a2733; */
-}
+/* } */
 /* 
 Media queries : Vérifier que cela soit correct en 320px */
 
@@ -42,6 +42,11 @@ Media queries : Vérifier que cela soit correct en 320px */
   .langWrap {
     margin: 0 4vw 0;
   }
+
+  .description {
+    margin-bottom: 40px;
+  }
+
 }
 
 /*mobile au dessus de 600*/
@@ -76,8 +81,11 @@ Media queries : Vérifier que cela soit correct en 320px */
   .langWrap {
     margin: 0 35px 0 0;
   }
-}
 
+  .description {
+    margin-bottom: 50px;
+  }
+}
 
 /* Photos des restaurants : j'ai ajouté width 100% pour que les images soit alignés avec le texte */
 .items {
@@ -102,7 +110,6 @@ Media queries : Vérifier que cela soit correct en 320px */
 }
 */
 
-
 /* concerne tout le monde */
 body {
   color: var(--color-primary);
@@ -116,8 +123,6 @@ h2 {
     font-size: x-large;
     text-decoration: underline;
   }
-
-
 
 /* les class */
 
@@ -154,8 +159,6 @@ h2 {
     color: rgb(66, 66, 66);
     padding-bottom: 8rem;
   }
-  
- 
 
   /*les drapeaux de Marie*/
 
@@ -187,16 +190,6 @@ h2 {
   color: #ffffff;
   background-color: #dbd8d8;
   border: 1.5px solid #d8d8d8;
-}
-
-.description {
-  font-size: x-large;
-  padding: 8px;
-  padding-left: 12rem;
-  padding-right: 12rem;
-  text-align: center;
-  color: rgb(66, 66, 66);
-  padding-bottom: 8rem;
 }
 
 
