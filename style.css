@@ -14,35 +14,10 @@ Media queries : Vérifier que cela soit correct en 320px */
 
 /* Mobile en-dessous de 600*/
 
-@media only screen and (max-width: 600px) {
-  body {
-    font-family: "Lora", serif;
-    line-height: 1.5;
-  }
 
-  main {
-    padding: 30px;
-    margin: 5vw;
-  }
 
-  h1 {
-    margin-left: 1vw;
-    text-align: center;
-  }
 
-  h2 {
-    line-height: 1.5;
-    margin: 50px;
-  }
 
-  h3 {
-    line-height: 3;
-  }
-
-  .langWrap {
-    margin: 0 4vw 0;
-  }
-}
 
 /*mobile au dessus de 600*/
 
@@ -76,6 +51,7 @@ Media queries : Vérifier que cela soit correct en 320px */
   .langWrap {
     margin: 0 35px 0 0;
   }
+ 
 }
 
 
@@ -145,15 +121,7 @@ h2 {
     color: rgb(57, 49, 177);
   }
 
-  .description {
-    font-size: x-large;
-    padding: 8px;
-    padding-left: 12rem;
-    padding-right: 12rem;
-    text-align: center;
-    color: rgb(66, 66, 66);
-    padding-bottom: 8rem;
-  }
+
   
  
 
@@ -254,6 +222,55 @@ img {
     }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Lora", serif;
+    line-height: 1;
+    margin: 5px;
+    padding: 5px;
+   
+  }
+  .description{
+    font-size: large;
+    
+  }
+h2{
+  font-size: large;
+  margin: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.content {
+
+  margin-bottom: 50px;
+}
+
+
+  main {
+    padding: 5px;
+    margin: 1vw;
+  }
+
+  h1 {
+    margin-left: 1vw;
+    text-align: center;
+  }
+
+  
+
+  h3 {
+    line-height: 1;
+    font-size: 18px;
+  }
+
+  .langWrap {
+    margin: 0 4vw 0;
+    
+  }
+  .card-infos {
+    padding: 1.2rem;
+ 
+}
 /* à effacer ?*/
 
 
