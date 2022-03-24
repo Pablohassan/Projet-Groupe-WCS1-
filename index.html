@@ -38,7 +38,7 @@
                 <a href="#restaurants" class ="menuEffet" data-lang="fr">Restaurants</a>
                 <a href="#restaurants" class ="menuEffet" data-lang="it">Ristoranti</a>
                 <a href="#bars" class ="menuEffet" data-lang="fr">Bars</a>
-                <a href="#bars" class ="menuEffet" data-lang="it">Barre</a>
+                <a href="#bars" class ="menuEffet" data-lang="it">Bars</a>
                 <a href="#culturelles" class ="menuEffet" data-lang="fr">Activités culturelles</a>
                 <a href="#culturelles" class ="menuEffet" data-lang="it">Attività culturali</a>
                 <a href="#parcs" class="menuEffet" data-lang="fr">Parcs</a>
@@ -376,7 +376,10 @@
                 <h2 data-lang="fr">Quelques activités culturelles pour digérer</h2>
                 <h2 data-lang="it">Alcune attività culturali per digerire</h2>
                 <div class="card">
-                    <img class="items items-left" src="assets/activites-darwin2.jpeg" alt="Image du centre culturel Darwin">
+                    <picture>
+                        <source class="items items-right media="(min-width: 1024px)" srcset="assets/activites-darwin2.jpeg">
+                        <img class="items items-rightsrc="assets/activites-darwin-caree.jpeg" alt="description">
+                      </picture>
                     <div class="card-infos">
                         <h3>Darwin Eco-système</h3>
                         <p data-lang="fr">
@@ -601,24 +604,19 @@
             <form id="contactForm">
                 <h1 class="contactTitle" data-lang="fr">Contacte-nous</h1>
                 <h1 class="contactTitle" data-lang="it">Contattaci</h1>
-                <label1 for="name" data-lang="fr">Ton nom :</label1>
-                <br />
-                <label1 for="name" data-lang="it">l tuo nome :</label1>
-                <br />
-                <input type="text" id="name" name="name" value="" /><br />
-                <label1 for="objet" data-lang="fr">Objet du message :</label1>
-                <br />
-                <label1 for="objet" data-lang="it">Oggetto del messaggio :</label1>
-                <br />
-                <input type="text" id="objet" name="objet" value="" /><br />
-                <label1 for="message" data-lang="fr">Message :</label1>
-                <br />
-                <label1 for="message" data-lang="it">Messaggio :</label1>
-                <br />
+                <label for="name" class="textForm" data-lang="fr">Ton nom :</label>
+                <label for="name" class="textForm" data-lang="it">l tuo nome :</label>
+                <input type="text" id="name" name="name" value="">
+                <label for="objet" class="textForm" data-lang="fr">Objet du message :</label>
+                <label for="objet" class="textForm" data-lang="it">Oggetto del messaggio :</label>
+                <input type="text" id="objet" name="objet" value="" />
+                <label for="message" class="textForm" data-lang="fr">Message :</label>
+                <label for="message" class="textForm" data-lang="it">Messaggio :</label>
                 <textarea id="message" name="message"></textarea>
-                <br /><br />
-                <input type="submit" value="Send" />
-            </form>
+                <button type="submit" class="submit" data-lang="fr">Envoyer</button>
+                <button type="submit" class="submit" data-lang="it">Mandare</button>
+              </form>
+
             </br>
             <hr>
             </br>

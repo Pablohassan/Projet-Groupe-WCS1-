@@ -98,27 +98,27 @@
   span {
     color: rgb(57, 49, 177);
   }
-  label {
+  /* label {
     margin: 0 40px 0 0;
     font-size: 26px;
     line-height: 70px;
     display: none;
     width: 26px;
     float: right;
-  }
+  } */
   #toggle {
     display: none;
   }
 
   /*concerne le menu en mobile */
 @media only screen and (max-width: 1024px) {
-    label {
+    /* label {
       display: block;
       cursor: pointer;
       position: relative;
       margin: 0;
       right: 5vw;
-    }
+    } */
 
     .nav {
       grid-template-columns: repeat(3, minmax(0, 1fr));
