@@ -15,9 +15,9 @@ h3 {
   margin: 0 4vw 0;
 }
 
-.alignTitreHome {
+/* .alignTitreHome {
   padding: 35px;
-}
+} */
 
 .description {
   margin-bottom: 40px;
@@ -203,9 +203,9 @@ img {
     grid-row-start: 1;
   }
 
-  .alignTitreHome {
+  /* .alignTitreHome {
     padding: 20px;
-  }
+  } */
 }
 
 /* Mobile en-dessous de 600*/
@@ -252,6 +252,16 @@ img {
     padding: 1.2rem;
   }
   .alignTitreHome {
-    padding-top: 50px;
+    padding-top: 55px;
   }
+  .list-icons img {
+    width: 1rem;
+    margin: 7px;
+    .flex-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      /* margin: 16px; */
+  }
+}
 }
