@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,
-            initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Bastide Tour</title>
         <link rel="stylesheet" type="text/css" href="style-carousel.css">
         <link rel="stylesheet" href="style.css">
@@ -16,29 +15,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     </head>
     <body>
-            
         <!-- HEADER (avec navbar et doit prendre toute la largeur (sans padding ou margin)) -->
         <header class="nav">
             <a href="/" class="logo">
-                <img
-                  id="logo"
-                  src="assets/logo.png"
-                  alt="Logo"
-                  class="logo"
+            <img
+                id="logo"
+                src="assets/logo.png"
+                alt="Logo"
+                class="logo"
                 />
             </a>
-
             <div id="menu-button" class="toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="toggle-label" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </div>
-
             <div class="langWrap">
                 <button class="lang-switch" data-lang="fr">🇫🇷</button>
                 <button class="lang-switch" data-lang="it">🇮🇹</button>
             </div>
-
             <div class="menu" id="menu">
                 <a href="#restaurants" class ="menuEffet" data-lang="fr">Restaurants</a>
                 <a href="#restaurants" class ="menuEffet" data-lang="it">Ristoranti</a>
@@ -52,469 +47,456 @@
                 <a href="#contactForm" class="menuEffet" data-lang="it">Contattaci</a>
                 <a href="/" class="menuEffet"><span>Home</span></a>
             </div>
-
-    </header>
-
+        </header>
         <!-- MAIN (avec margin, créer une classe avec du margin et l'appliquer sur main (plus sur le body))-->
         <main>
             <div class="titlePrincipal">
-            <h1 class="hero-title">Bastide</h1>
-        </div>
-                <section class="description">
-                    <div class="content">
-                        <!-- classes texte servent pour switcher en italien-->
-                        <p data-lang="fr">Que vous soyez de passage sur
-                            Bordeaux ou non, voici un site répertoriant
-                            quelques bonnes adresses du quartier Bastide.
-                            N’hésitez pas à nous faire vos retours sur les
-                            endroits que nous avons sélectionnés pour vous !
-                        </p>
-                        <p data-lang="it">
-                            Che siate di passaggio o meno a Bordeaux, ecco un
-                            sito che elenca alcuni buoni indirizzi nel quartiere
-                            di Bastide. Non esitate a darci il vostro feedback sui
-                            luoghi che abbiamo selezionato per voi!
-                        </p>
-                    </div>
-                </section>
-
+                <h1 class="hero-title">Bastide</h1>
+            </div>
+            <section class="description">
+                <div class="content">
+                    <!-- classes texte servent pour switcher en italien-->
+                    <p data-lang="fr">Que vous soyez de passage sur
+                        Bordeaux ou non, voici un site répertoriant
+                        quelques bonnes adresses du quartier Bastide.
+                        N’hésitez pas à nous faire vos retours sur les
+                        endroits que nous avons sélectionnés pour vous !
+                    </p>
+                    <p data-lang="it">
+                        Che tu sia di passaggio o meno a Bordeaux, ecco un
+                        sito che elenca alcuni buoni indirizzi nel quartiere
+                        di Bastide. Non esitare a darci il tuo feedback sui luoghi
+                        che abbiamo selezionato per te!
+                    </p>
+                </div>
+            </section>
             <section class="carousel" aria-label="Gallery">
                 <ol class="carousel__viewport">
                     <li onclick='redirection()' id="carousel__slide1" tabindex="1 "
                         class="carousel__slide">
                         <div class="carousel__snapper">
                             <a href="#carousel__slide4" class="carousel__prev">Go
-                                to last slide</a>
+                            to last slide</a>
                             <a href="#carousel__slide2" class="carousel__next">Go
-                                to next slide</a>
+                            to next slide</a>
                         </div>
                     </li>
                     <li id="carousel__slide2" tabindex="0"
                         class="carousel__slide">
                         <div class="carousel__snapper"></div>
                         <a href="#carousel__slide1" class="carousel__prev">Go to
-                            previous slide</a>
+                        previous slide</a>
                         <a href="#carousel__slide3" class="carousel__next">Go to
-                            next slide</a>
+                        next slide</a>
                     </li>
                     <li id="carousel__slide3" tabindex="0"
                         class="carousel__slide">
                         <div class="carousel__snapper"></div>
                         <a href="#carousel__slide2" class="carousel__prev">Go to
-                            previous slide</a>
+                        previous slide</a>
                         <a href="#carousel__slide4" class="carousel__next">Go to
-                            next slide</a>
+                        next slide</a>
                     </li>
                     <li id="carousel__slide4" tabindex="0"
                         class="carousel__slide">
                         <div class="carousel__snapper"></div>
                         <a href="#carousel__slide3" class="carousel__prev">Go to
-                            previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to
-                            first slide</a>
-                    </li>
-                </li>
-                <li id="carousel__slide5" tabindex="0"
-                    class="carousel__slide">
-                    <div class="carousel__snapper"></div>
-                    <a href="#carousel__slide1" class="carousel__prev">Go to
                         previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to
+                        <a href="#carousel__slide1" class="carousel__next">Go to
+                        first slide</a>
+                    </li>
+                    </li>
+                    <li id="carousel__slide5" tabindex="0"
+                        class="carousel__slide">
+                        <div class="carousel__snapper"></div>
+                        <a href="#carousel__slide1" class="carousel__prev">Go to
+                        previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to
                         next slide</a>
-                </li>
+                    </li>
                 </ol>
                 <aside class="carousel__navigation">
                     <ol class="carousel__navigation-list">
                         <li class="carousel__navigation-item">
                             <a href="#carousel__slide1"
                                 class="carousel__navigation-button">Go to slide
-                                1</a>
+                            1</a>
                         </li>
                         <li class="carousel__navigation-item">
                             <a href="#carousel__slide2"
                                 class="carousel__navigation-button">Go to slide
-                                2</a>
+                            2</a>
                         </li>
                         <li class="carousel__navigation-item">
                             <a href="#carousel__slide3"
                                 class="carousel__navigation-button">Go to slide
-                                3</a>
+                            3</a>
                         </li>
                         <li class="carousel__navigation-item">
                             <a href="#carousel__slide4"
                                 class="carousel__navigation-button">Go to slide
-                                4</a>
+                            4</a>
                         </li>
                     </ol>
                 </aside>
-  <!-- Restaurants) -->
+                <!-- Restaurants) -->
             </section>
-                <section id="restaurants" class="alignTitreHome">
-                    <h2 data-lang="fr">Les restaurants qui vont vous donner envie de revenir</h2>
-                    <h2 data-lang="it">I ristoranti che ti faranno venire voglia di tornare</h2>
-                    <div class="card">
-                        <img class="items items-left" src="assets/restau-siman.jpeg" 
-                            alt="Photo du restaurant le Siman"/>
-                        <div class="card-infos">
-                            <h3>Le Siman</h3>
-                            <p data-lang="fr">
-                                Installez-vous confortablement et découvrez un lieu
-                                chaleureux habité par une cuisine bistronomique de qualité
-                                et un personnel professionnel et convivial. Cadre déroutant,
-                                emplacement imprenable sur la rive droite de Bordeaux et rooftop
-                                surplombant la ville, face à la célèbre Place de la Bourse… Le Siman
-                                surprend autant qu’il séduit.
-                                C’est dans cette atmosphère unique que nous vous invitons à notre
-                                table pour partager un déjeuner ou un dîner. Sans
-                                oublier nos brunchs dominicaux !
-                            </p>
-                            <p data-lang="it">
-                                Mettetevi comodi e scoprite un luogo accogliente dotato di una cucina bistrot
-                                di qualità e uno staff professionale e cordiale. Il ristorante ha una posizione
-                                inespugnabile sulla riva destra di Bordeaux e un tetto che domina la città di
-                                fronte alla famosa Place de la Bourse. Le Siman sorprende tanto quanto seduce:
-                                è in questa atmosfera unica che vi invitiamo alla nostra tavola per condividere
-                                il pranzo o la cena (per non parlare dei nostri brunch domenicali!)
-                            </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="https://www.siman-bordeaux.com/" target="_blank">
+            <section id="restaurants" class="alignTitreHome">
+                <h2 data-lang="fr">Les restaurants qui vont vous donner envie de revenir</h2>
+                <h2 data-lang="it">I ristoranti che ti faranno venire voglia di tornare</h2>
+                <div class="card">
+                    <img class="items items-left" src="assets/restau-siman.jpeg" 
+                        alt="Photo du restaurant le Siman"/>
+                    <div class="card-infos">
+                        <h3>Le Siman</h3>
+                        <p data-lang="fr">
+                            Installez-vous confortablement et découvrez un lieu
+                            chaleureux habité par une cuisine bistronomique de qualité
+                            et un personnel professionnel et convivial. Cadre déroutant,
+                            emplacement imprenable sur la rive droite de Bordeaux et rooftop
+                            surplombant la ville, face à la célèbre Place de la Bourse… Le Siman
+                            surprend autant qu’il séduit.
+                            C’est dans cette atmosphère unique que nous vous invitons à notre
+                            table pour partager un déjeuner ou un dîner. Sans
+                            oublier nos brunchs dominicaux !
+                        </p>
+                        <p data-lang="it">
+                            Mettetevi comodi e scoprite un luogo accogliente dotato di una cucina bistrot
+                            di qualità e uno staff professionale e cordiale. Il ristorante ha una posizione
+                            inespugnabile sulla riva destra di Bordeaux e un tetto che domina la città di
+                            fronte alla famosa Place de la Bourse. Le Siman sorprende tanto quanto seduce:
+                            è in questa atmosfera unica che vi invitiamo alla nostra tavola per condividere
+                            il pranzo o la cena (per non parlare dei nostri brunch domenicali!)
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a href="https://www.siman-bordeaux.com/" target="_blank">
                             <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Le+Siman/@44.8417682,-0.5710375,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262d121989c7:0xb4beb44d88ff65cd!8m2!3d44.8417466!4d-0.5623146"
-                            target="_blank">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Le+Siman/@44.8417682,-0.5710375,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262d121989c7:0xb4beb44d88ff65cd!8m2!3d44.8417466!4d-0.5623146"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33556674990" target="_blank">
+                            </a>
+                            <a href="tel:+33556674990" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
-                    </section>
+                            </a>
+                        </section>
+                    </div>
                 </div>
-            </div>
-        
                 <div class="card">
                     <div class="card-infos">
                         <h3>Khmer Street Food Bordeaux</h3>
-                    <p data-lang="fr">
-                        Restaurant Street Food du Cambodge et Bar. Ambiance
-                        familiale et accueil chaleureux. Cuisine et sauces faites
-                        maison à  base de produits frais Tous nos plats sont servis
-                        rapidement et se dégustent sur place en salle ou en terrasse.
-                        Vous pouvez également les emporter ou vous faire livrer par nos
-                        partenaires.</p>
-                    <p data-lang="it">
-                        Ristorante e bar con cibo di strada cambogiano dall’ambiente familiare
-                        e con una calda accoglienza. Cucina casalinga e salse a base di prodotti
-                        freschi. Tutti i nostri piatti vengono serviti velocemente e possono essere
-                        consumati nella sala da pranzo o in terrazza. Potete anche portarli via o
-                        farveli consegnare dai nostri partner.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a
-                            href="https://khmer-street-food.eatbu.com/?lang=fr"
-                            target="_blank">
+                        <p data-lang="fr">
+                            Restaurant Street Food du Cambodge et Bar. Ambiance
+                            familiale et accueil chaleureux. Cuisine et sauces faites
+                            maison à  base de produits frais Tous nos plats sont servis
+                            rapidement et se dégustent sur place en salle ou en terrasse.
+                            Vous pouvez également les emporter ou vous faire livrer par nos
+                            partenaires.
+                        </p>
+                        <p data-lang="it">
+                            Ristorante e bar con cibo di strada cambogiano dall’ambiente familiare
+                            e con una calda accoglienza. Cucina casalinga e salse a base di prodotti
+                            freschi. Tutti i nostri piatti vengono serviti velocemente e possono essere
+                            consumati nella sala da pranzo o in terrazza. Potete anche portarli via o
+                            farveli consegnare dai nostri partner.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a
+                                href="https://khmer-street-food.eatbu.com/?lang=fr"
+                                target="_blank">
                             <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/KHMER+STREET+FOOD+BORDEAUX/@44.8405697,-0.5690857,15z/data=!3m1!4b1!4m5!3m4!1s0xd552715cf73d35b:0x86d0eff4b8a7951e!8m2!3d44.8405565!4d-0.5603554"
-                            target="_blank">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/KHMER+STREET+FOOD+BORDEAUX/@44.8405697,-0.5690857,15z/data=!3m1!4b1!4m5!3m4!1s0xd552715cf73d35b:0x86d0eff4b8a7951e!8m2!3d44.8405565!4d-0.5603554"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33554685183" target="_blank">
+                            </a>
+                            <a href="tel:+33554685183" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
-                    </section>
+                            </a>
+                        </section>
+                    </div>
+                    <img class="items items-right" src="assets/resteau-street.jpeg " alt="Photo du restaurant Khmer stree food">
                 </div>
-                <img class="items items-right" src="assets/KHMER-STREET-FOOD.jpeg " alt="Photo du restaurant Khmer stree food">
-                </div>
-
                 <div class="card">
-                    <img class="items items-left" src="assets/wasabi-café.jpeg" alt="Photo du Restaurant le Wasabi café">
-                    <div class="card-infos">  
-                    <h3>Wasabi Café</h3>
-                    <p data-lang="fr">
-                        Le Wasabi Café est l'un des plus anciens restaurants
-                        japonais de Bordeaux, créé en 2003. Notre credo : vous
-                        proposer des plats typiquement japonais à partir de produits
-                        frais et de qualité tout au long de l'année. Notre objectif :
-                        vous proposer un voyage à travers la gastronomie japonaise. Nos
-                        chefs expérimentés et notre carte de vins et boissons rendront
-                        cette expérience unique.</p>
-                    <p data-lang="it">
-                        Il Wasabi Cafè è uno dei più antichi ristoranti giapponesi di Bordeaux,
-                        nato nel 2003. Il nostro credo: offrirvi piatti tipici giapponesi con prodotti
-                        freschi e di qualità durante tutto l'anno. Il nostro obiettivo: offrirvi un viaggio
-                        attraverso la gastronomia giapponese. I nostri chef esperti e la nostra carta dei vini
-                        e delle bevande renderanno questa esperienza unica.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="https://www.wasabicafe.fr/" target="_blank">
+                    <img class="items items-left" src="assets/restau-wasabi.jpeg" alt="Photo du Restaurant le Wasabi café">
+                    <div class="card-infos">
+                        <h3>Wasabi Café</h3>
+                        <p data-lang="fr">
+                            Le Wasabi Café est l'un des plus anciens restaurants
+                            japonais de Bordeaux, créé en 2003. Notre credo : vous
+                            proposer des plats typiquement japonais à partir de produits
+                            frais et de qualité tout au long de l'année. Notre objectif :
+                            vous proposer un voyage à travers la gastronomie japonaise. Nos
+                            chefs expérimentés et notre carte de vins et boissons rendront
+                            cette expérience unique.
+                        </p>
+                        <p data-lang="it">
+                            Il Wasabi Cafè è uno dei più antichi ristoranti giapponesi di Bordeaux,
+                            nato nel 2003. Il nostro credo: offrirvi piatti tipici giapponesi con prodotti
+                            freschi e di qualità durante tutto l'anno. Il nostro obiettivo: offrirvi un viaggio
+                            attraverso la gastronomia giapponese. I nostri chef esperti e la nostra carta dei vini
+                            e delle bevande renderanno questa esperienza unica.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a href="https://www.wasabicafe.fr/" target="_blank">
                             <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Wasabi+Caf%C3%A9/@44.8397985,-0.5683831,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262de218d76b:0xe199092f37e92166!8m2!3d44.8397748!4d-0.5596433"
-                            target="_blank">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Wasabi+Caf%C3%A9/@44.8397985,-0.5683831,15z/data=!3m1!4b1!4m5!3m4!1s0xd55262de218d76b:0xe199092f37e92166!8m2!3d44.8397748!4d-0.5596433"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33556322844" target="_blank">
+                            </a>
+                            <a href="tel:+33556322844" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
-                    </section>
+                            </a>
+                        </section>
                     </div>
                 </div>
-                </section>
-                
-  <!-- Bars -->
-                <section id="bars" class="alignTitreHome">
-                    <h2 data-lang="fr">Les bars sympas où boire un verre</h2>
-                    <h2 data-lang="it">I bar simpatici dove bere un bicchiere</h2>
-                    <div class="card">
-                        <div class="card-infos">
-                    <h3>The Central Pub</h3>
-                    <p data-lang="fr">
-                        Le meilleur Pub pour s’ambiancer sur la rive droite
-                        de Bordeaux, situé a 200 mètres de l’arrêt Stalingrad.
-                        En terrasse, profitez des superbes couchers de soleil
-                        sur la Garonne ou à l'intérieur avec une ambiance des
-                        plus « british ». Allez y pendent les happy hour, pour
-                        leurs grande variété de bières et leurs tapas, et restez y
-                        pour manger : le service continue jusqu'à 2 heures. </p>
-                    <p data-lang="it">
-                        Il miglior Pub per divertirsi sulla riva destra di Bordeaux,
-                        situato a 200 metri dalla fermata Stalingrad. Sulla terrazza,
-                        godetevi gli splendidi tramonti sulla Garonna o all'interno con
-                        un'atmosfera molto "british". Andateci durante l'happy hour, per
-                        la loro ampia varietà di birre e tapas, e restate lì a mangiare:
-                        il servizio continua fino alle 2 del mattino.
-                    </p>
-
+            </section>
+            <!-- Bars -->
+            <section id="bars" class="alignTitreHome">
+                <h2 data-lang="fr">Les bars sympas où boire un verre</h2>
+                <h2 data-lang="it">I bar simpatici dove bere un bicchiere</h2>
+                <div class="card">
+                    <div class="card-infos">
+                        <h3>The Central Pub</h3>
+                        <p data-lang="fr">
+                            Le meilleur Pub pour s’ambiancer sur la rive droite
+                            de Bordeaux, situé a 200 mètres de l’arrêt Stalingrad.
+                            En terrasse, profitez des superbes couchers de soleil
+                            sur la Garonne ou à l'intérieur avec une ambiance des
+                            plus « british ». Allez y pendent les happy hour, pour
+                            leurs grande variété de bières et leurs tapas, et restez y
+                            pour manger : le service continue jusqu'à 2 heures. 
+                        </p>
+                        <p data-lang="it">
+                            Il miglior Pub per divertirsi sulla riva destra di Bordeaux,
+                            situato a 200 metri dalla fermata Stalingrad. Sulla terrazza,
+                            godetevi gli splendidi tramonti sulla Garonna o all'interno con
+                            un'atmosfera molto "british". Andateci durante l'happy hour, per
+                            la loro ampia varietà di birre e tapas, e restate lì a mangiare:
+                            il servizio continua fino alle 2 del mattino.
+                        </p>
                         <section class="flex-container list-icons">
                             <a href="https://www.the-central-pub.com/" target="_blank">
-                                <img src="assets/globe.png" alt="Site web" />
+                            <img src="assets/globe.png" alt="Site web" />
                             </a>
                             <a
                                 href="https://www.google.fr/maps/place/The+Central+Pub/@44.8414979,-0.564169,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262d11d441a9:0x8842c84d71381dcf!8m2!3d44.8414511!4d-0.5619747"
                                 target="_blank">
-                                <img src="assets/lieu.png" alt="Y aller" />
+                            <img src="assets/lieu.png" alt="Y aller" />
                             </a>
                             <a href="tel:+33557803800" target="_blank">
                                 <img src="assets/phone.png" alt="Telephone" />
                             </a>
-                        </div>
-                        <img class="items items-right" src="assets/le-central.jpeg" alt="Photo du Bar Le Central">
-                    </div>
                         </section>
-                        
-                        
-                        <div class="card">
-                            <img class="items items-left" src="assets/alirc.jpeg" alt="Photo de la Guinguette de chez Alric">
-                            <div class="card-infos">
-                            <h3 id="Guinguette">La Guinguette Chez Alriq</h3>
-                        <p data-lang="fr">
-                        Si vous aimez danser sur de la musique Live, savourer
-                        votre repas « à la bonne franquette » dans une ambiance
-                        typique du folklore français n’hesitez pas à faire un tour
-                        chez Alriq, on y va seul, en amoureux, entre amis ou en famille.
-                        On se retrouve autour d’un verre ou d’un plat simple, on s’égaye
-                        sous les lampions au fil de l’eau, on se croise, se rencontre et la
-                        magie s’opère doucement. La musique résonne, caresse les papilles auditives
-                        et invite chacun à partager ce fragile instant de grâce. Ils vous
-                        aceuillent du printemps jusqu'à la fin de l’automne.</p>
-                    <p data-lang="it">
-                        Se vi piace ballare con musica dal vivo, assaporare il vostro pasto « à la bonne
-                        franquette » in un'atmosfera tipica del folklore francese, non esitate a visitare
-                        Alric: si va da soli, in coppia, con gli amici o la famiglia. Ci si incontra attorno
-                        a un drink o un semplice piatto, ci si rallegra sotto le lanterne sull'acqua, ci si
-                        incrocia, ci si incontra e la magia avviene lentamente. La musica risuona, accarezza
-                        le papille gustative uditive e invita tutti a condividere questo fragile momento di
-                        grazia. Vi accolgono dalla primavera fino alla fine dell'autunno.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="https://www.laguinguettechezalriq.com/" target="_blank">
-                            <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/La+Guinguette+Chez+Alriq/@44.8506391,-0.5642683,17z/data=!3m1!4b1!4m5!3m4!1s0x40544932aa58493d:0xa9b7bca9c0cf9cad!8m2!3d44.8506353!4d-0.5620743"
-                            target="_blank">
-                            <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33556865849" target="_blank">
-                            <img src="assets/phone.png" alt="Telephone" />
-                        </a>
-                        </div>
                     </div>
-                    </section>
+                    <img class="items items-right" src="assets/le-central.jpeg" alt="Photo du Bar Le Central">
+                </div>
 
-                    <div class="card">
+                <div class="card">
+                    <img class="items items-left" src="assets/alirc.jpeg" alt="Photo de la Guinguette de chez Alric">
+                    <div class="card-infos">
+                        <h3 id="Guinguette">La Guinguette Chez Alriq</h3>
+                        <p data-lang="fr">
+                            Si vous aimez danser sur de la musique Live, savourer
+                            votre repas « à la bonne franquette » dans une ambiance
+                            typique du folklore français n’hesitez pas à faire un tour
+                            chez Alriq, on y va seul, en amoureux, entre amis ou en famille.
+                            On se retrouve autour d’un verre ou d’un plat simple, on s’égaye
+                            sous les lampions au fil de l’eau, on se croise, se rencontre et la
+                            magie s’opère doucement. La musique résonne, caresse les papilles auditives
+                            et invite chacun à partager ce fragile instant de grâce. Ils vous
+                            aceuillent du printemps jusqu'à la fin de l’automne.
+                        </p>
+                        <p data-lang="it">
+                            Se vi piace ballare con musica dal vivo, assaporare il vostro pasto « à la bonne
+                            franquette » in un'atmosfera tipica del folklore francese, non esitate a visitare
+                            Alric: si va da soli, in coppia, con gli amici o la famiglia. Ci si incontra attorno
+                            a un drink o un semplice piatto, ci si rallegra sotto le lanterne sull'acqua, ci si
+                            incrocia, ci si incontra e la magia avviene lentamente. La musica risuona, accarezza
+                            le papille gustative uditive e invita tutti a condividere questo fragile momento di
+                            grazia. Vi accolgono dalla primavera fino alla fine dell'autunno.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a href="https://www.laguinguettechezalriq.com/" target="_blank">
+                            <img src="assets/globe.png" alt="Site web" />
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/La+Guinguette+Chez+Alriq/@44.8506391,-0.5642683,17z/data=!3m1!4b1!4m5!3m4!1s0x40544932aa58493d:0xa9b7bca9c0cf9cad!8m2!3d44.8506353!4d-0.5620743"
+                                target="_blank">
+                            <img src="assets/lieu.png" alt="Y aller" />
+                            </a>
+                            <a href="tel:+33556865849" target="_blank">
+                            <img src="assets/phone.png" alt="Telephone" />
+                            </a>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="card">
                     <div class="card-infos">
                         <h3>Les Chantiers de la Garonne</h3>
                         <p data-lang="fr">
-                        Offrez-vous un moment de détente dans cet ancien
-                        chantier naval datant de 1902 dans lequel on construisait
-                        des bateaux en bois. Sa brasserie élabore une gamme de bières
-                        100 % bio produites à base de céréales bio cultivées et maltées
-                        dans le Sud-Ouest. Tout ça sans oublier sa plage, un must de farniente
-                        inattendu sur les rives de Garonne.</p>
-                    <p data-lang="it">
-                        Regalatevi un momento di relax in questo ex cantiere navale del 1902 dove
-                        venivano costruite barche di legno. Il suo birrificio produce una gamma di 
-                        birre biologiche al 100% prodotte da cereali biologici coltivati e maltati
-                        nel sud-ovest. Tutto questo senza dimenticare la sua spiaggia, tappa obbligata
-                        per ozio inaspettato sulle rive della Garonna.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="https://leschantiersdelagaronne.camp/" target="_blank">
+                            Offrez-vous un moment de détente dans cet ancien
+                            chantier naval datant de 1902 dans lequel on construisait
+                            des bateaux en bois. Sa brasserie élabore une gamme de bières
+                            100 % bio produites à base de céréales bio cultivées et maltées
+                            dans le Sud-Ouest. Tout ça sans oublier sa plage, un must de farniente
+                            inattendu sur les rives de Garonne.
+                        </p>
+                        <p data-lang="it">
+                            Regalatevi un momento di relax in questo ex cantiere navale del 1902 dove
+                            venivano costruite barche di legno. Il suo birrificio produce una gamma di 
+                            birre biologiche al 100% prodotte da cereali biologici coltivati e maltati
+                            nel sud-ovest. Tutto questo senza dimenticare la sua spiaggia, tappa obbligata
+                            per ozio inaspettato sulle rive della Garonna.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a href="https://leschantiersdelagaronne.camp/" target="_blank">
                             <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Les+Chantiers+de+la+Garonne/@44.8510981,-0.5637921,17z/data=!3m1!4b1!4m5!3m4!1s0xd55288053e45b51:0x1744fa88532740cc!8m2!3d44.8510943!4d-0.5615981"
-                            target="_blank">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Les+Chantiers+de+la+Garonne/@44.8510981,-0.5637921,17z/data=!3m1!4b1!4m5!3m4!1s0xd55288053e45b51:0x1744fa88532740cc!8m2!3d44.8510943!4d-0.5615981"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33547798470" target="_blank">
+                            </a>
+                            <a href="tel:+33547798470" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
+                            </a>
+                        </section>
                     </div>
                     <img class="items items-right" src="assets/Bar-chantier.jpeg" alt="Image du bar les cChantiers de la Garone">
                 </div>
-                    </section>
-                </section>
-  <!-- Activitées culturelles-->
-                <section id="culturelles" class = "alignTitreHome">
-                    <h2 data-lang="fr">Quelques activités culturelles pour digérer</h2>
-                    <h2 data-lang="it">Alcune attività culturali per digerire</h2>
-                    <div class="card">
-                        <picture>
-                            <source class="items items-right media="(min-width: 1024px)" srcset="assets/activites-darwin2.jpeg">
-                            <img class="items items-rightsrc="assets/activites-darwin-caree.jpeg" alt="description">
-                          </picture>
-                        <div class="card-infos">
-                    <h3>Darwin Eco-système</h3>
-
-                    <p data-lang="fr">
-                        Darwin est un lieu alternatif de la rive-droite de Bordeaux.
-                        Cette ancienne caserne désaffectée est aujourd’hui
-                        éco-réhabilitée. Sur plus de 3 hectares, Darwin organise la
-                        collaboration entre les acteurs du territoire contribuant à la
-                        transition vers des modèles de société plus coopératifs et résilients.
-                        Pans entiers de murs dédiés au street-art, skate-park, restaurant et
-                        épicerie bio, ferme urbaine, espaces de coworking, pépinière d’entreprises, 
-                        ateliers de réparation de vélos, club et terrain de roller-derby, salles de
-                        conférences, concerts… Darwin est un véritable écosystème où chaque jour plus d’un
-                        millier de personnes s’y croisent. </p>
-                    <p data-lang="it">
-                        Darwin è un luogo alternativo sulla riva destra di Bordeaux. Questa ex caserma in disuso
-                        è ora eco-riabilitata. Su più di 3 ettari, Darwin organizza la collaborazione tra gli
-                        attori del territorio contribuendo alla transizione verso modelli di società più cooperativi
-                        e resilienti. Ci sono intere sezioni di pareti dedicate alla street-art, uno skate-park, un
-                        ristorante, un negozio di alimentari biologici, l’urban farm, spazi di coworking, un’incubatore
-                        aziendale, officine di riparazione per biciclette, un roller-derby club, sale conferenze e concerti.
-                        Darwin è un vero ecosistema dove ogni giorno si incontrano più di 1000 persone.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="https://darwin.camp/" target="_blank">
-                            <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Darwin+Eco-syst%C3%A8me/@44.8495521,-0.5625407,17z/data=!3m1!4b1!4m5!3m4!1s0xd552881d2a1d2c5:0x2c84ad56e339ad2c!8m2!3d44.8495483!4d-0.5603467"
-                            target="_blank">
+            </section>
+            <!-- Activitées culturelles-->
+            <section id="culturelles" class = "alignTitreHome">
+                <h2 data-lang="fr">Quelques activités culturelles pour digérer</h2>
+                <h2 data-lang="it">Alcune attività culturali per digerire</h2>
+                <div class="card">
+                    <picture>
+                        <source class="items items-right media="(min-width: 1024px)" srcset="assets/activites-darwin2.jpeg">
+                        <img class="items items-rightsrc="assets/activites-darwin-caree.jpeg" alt="description">
+                      </picture>
+                    <div class="card-infos">
+                        <h3>Darwin Eco-système</h3>
+                        <p data-lang="fr">
+                            Darwin est un lieu alternatif de la rive-droite de Bordeaux.
+                            Cette ancienne caserne désaffectée est aujourd’hui
+                            éco-réhabilitée. Sur plus de 3 hectares, Darwin organise la
+                            collaboration entre les acteurs du territoire contribuant à la
+                            transition vers des modèles de société plus coopératifs et résilients.
+                            Pans entiers de murs dédiés au street-art, skate-park, restaurant et
+                            épicerie bio, ferme urbaine, espaces de coworking, pépinière d’entreprises, 
+                            ateliers de réparation de vélos, club et terrain de roller-derby, salles de
+                            conférences, concerts… Darwin est un véritable écosystème où chaque jour plus d’un
+                            millier de personnes s’y croisent. 
+                        </p>
+                        <p data-lang="it">
+                            Darwin è un luogo alternativo sulla riva destra di Bordeaux. Questa ex caserma in disuso
+                            è ora eco-riabilitata. Su più di 3 ettari, Darwin organizza la collaborazione tra gli
+                            attori del territorio contribuendo alla transizione verso modelli di società più cooperativi
+                            e resilienti. Ci sono intere sezioni di pareti dedicate alla street-art, uno skate-park, un
+                            ristorante, un negozio di alimentari biologici, l’urban farm, spazi di coworking, un’incubatore
+                            aziendale, officine di riparazione per biciclette, un roller-derby club, sale conferenze e concerti.
+                            Darwin è un vero ecosistema dove ogni giorno si incontrano più di 1000 persone.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a href="https://darwin.camp/" target="_blank">
+                            <img id="darwin" src="assets/globe.png" alt="Site web" />
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Darwin+Eco-syst%C3%A8me/@44.8495521,-0.5625407,17z/data=!3m1!4b1!4m5!3m4!1s0xd552881d2a1d2c5:0x2c84ad56e339ad2c!8m2!3d44.8495483!4d-0.5603467"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33556775206" target="_blank">
+                            </a>
+                            <a href="tel:+33556775206" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
+                            </a>
+                        </section>
                     </div>
                 </div>
-                    </section>
 
-                    <div class="card">
-                        <div class="card-infos">
+                <div class="card">
+                    <div class="card-infos">
                         <h3>Cinéma Mégarama</h3>
                         <p data-lang="fr">
-                        Installé dans l'ancienne gare terminus du train
-                        Paris-Orléans, le Mégarama est un cinéma multi-salles
-                        de la rive droite, avec café, vente de friandises et boissons.
-                        Outre la diffusion des sorties de films français et étrangers,
-                        vous y retrouvez la saison « Connaissance du Monde ». Films populaires
-                        et films à grands spectacles. Avant-premières avec venues d'acteurs de cinéma.
-                    </p>
-                    <p data-lang="it">
-                        Installato nell'ex stazione capolinea del treno Parigi-Orléans, il Mégarama è un
-                        cinema multisala sulla riva destra con caffetteria, vendita di dolci e bevande.
-                        Oltre alla proiezione delle uscite cinematografiche francesi e straniere, troverai
-                        lì la stagione « Connaissance du Monde ». Film popolari e di successo e anteprime con
-                        l’apparizione di attori cinematografici.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a href="http://bordeaux.megarama.fr/" target="_blank">
+                            Installé dans l'ancienne gare terminus du train
+                            Paris-Orléans, le Mégarama est un cinéma multi-salles
+                            de la rive droite, avec café, vente de friandises et boissons.
+                            Outre la diffusion des sorties de films français et étrangers,
+                            vous y retrouvez la saison « Connaissance du Monde ». Films populaires
+                            et films à grands spectacles. Avant-premières avec venues d'acteurs de cinéma.
+                        </p>
+                        <p data-lang="it">
+                            Installato nell'ex stazione capolinea del treno Parigi-Orléans, il Mégarama è un
+                            cinema multisala sulla riva destra con caffetteria, vendita di dolci e bevande.
+                            Oltre alla proiezione delle uscite cinematografiche francesi e straniere, troverai
+                            lì la stagione « Connaissance du Monde ». Film popolari e di successo e anteprime con
+                            l’apparizione di attori cinematografici.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a href="http://bordeaux.megarama.fr/" target="_blank">
                             <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.fr/maps/place/Cin%C3%A9ma+MEGARAMA+Bordeaux/@44.8417453,-0.5645152,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262d118531a3:0x21ebf1115e086901!8m2!3d44.8417555!4d-0.5613812"
-                            target="_blank">
+                            </a>
+                            <a
+                                href="https://www.google.fr/maps/place/Cin%C3%A9ma+MEGARAMA+Bordeaux/@44.8417453,-0.5645152,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262d118531a3:0x21ebf1115e086901!8m2!3d44.8417555!4d-0.5613812"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33556406670" target="_blank">
+                            </a>
+                            <a href="tel:+33556406670" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
+                            </a>
+                       </section>
                     </div>
                     <img class="items items-right" src="assets/Megarama-1.jpeg" alt="Image du cinema le Megarama">
                 </div>
-                    </section>
 
-                    
-                    <div class="card">
-                        <img class="items items-left" src="assets/Maison-cantonale.jpeg" alt="Image de la maison cantonale">
-                        <div class="card-infos">
-                            <h3>Maison cantonale de la Bastide</h3>
-                            <p data-lang="fr">
-                        La Maison cantonale est un lieu à vocation polyvalente.
-                        Entièrement rénovée entre 2001 et 2006, cet édifice de style Art
-                        Nouveau a été distingué par un Ruban du patrimoine. Elle a accueilli
-                        un prétoire, une bibliothèque, un commissariat et la mairie de quartier.
-                        Aujourd'hui elle accueille des manifestations : des spectacles, des conférences,
-                        des réunions de quartiers et des activités associatives.
-                    </p>
-                    <p data-lang="it">
-                        La Maison cantonale è un luogo polivalente. Interamente ristrutturato tra il 2001 e
-                        il 2006, questo edificio in stile Art Nouveau è stato insignito dell'Heritage Ribbon.
-                        Un tempo ospitava un'aula di tribunale, una biblioteca, una stazione di polizia e il
-                        municipio distrettuale: oggi ospita eventi, spettacoli, convegni, incontri di quartiere
-                        e attività associative.
-                    </p>
-
-                    <section class="flex-container list-icons">
-                        <a
-                            href="https://www.bordeaux.fr/l6136/maison-cantonale"
-                            target="_blank">
+                <div class="card">
+                    <img class="items items-left" src="assets/Maison-cantonale.jpeg" alt="Image de la maison cantonale">
+                    <div class="card-infos">
+                        <h3>Maison cantonale de la Bastide</h3>
+                        <p data-lang="fr">
+                            La Maison cantonale est un lieu à vocation polyvalente.
+                            Entièrement rénovée entre 2001 et 2006, cet édifice de style Art
+                            Nouveau a été distingué par un Ruban du patrimoine. Elle a accueilli
+                            un prétoire, une bibliothèque, un commissariat et la mairie de quartier.
+                            Aujourd'hui elle accueille des manifestations : des spectacles, des conférences,
+                            des réunions de quartiers et des activités associatives.
+                        </p>
+                        <p data-lang="it">
+                            La Maison cantonale è un luogo polivalente. Interamente ristrutturato tra il 2001 e
+                            il 2006, questo edificio in stile Art Nouveau è stato insignito dell'Heritage Ribbon.
+                            Un tempo ospitava un'aula di tribunale, una biblioteca, una stazione di polizia e il
+                            municipio distrettuale: oggi ospita eventi, spettacoli, convegni, incontri di quartiere
+                            e attività associative.
+                        </p>
+                        <section class="flex-container list-icons">
+                            <a
+                                href="https://www.bordeaux.fr/l6136/maison-cantonale"
+                                target="_blank">
                             <img src="assets/globe.png" alt="Site web" />
-                        </a>
-                        <a
-                            href="https://www.google.com/maps/place/Maison+Cantonale+de+la+Bastide/@44.8415519,-0.5530279,15z/data=!4m2!3m1!1s0x0:0x9f4fba51020c6a9b?sa=X&ved=2ahUKEwiAkKHO5cX2AhVHzhoKHc09DNYQ_BJ6BAgyEAU"
-                            target="_blank">
+                            </a>
+                            <a
+                                href="https://www.google.com/maps/place/Maison+Cantonale+de+la+Bastide/@44.8415519,-0.5530279,15z/data=!4m2!3m1!1s0x0:0x9f4fba51020c6a9b?sa=X&ved=2ahUKEwiAkKHO5cX2AhVHzhoKHc09DNYQ_BJ6BAgyEAU"
+                                target="_blank">
                             <img src="assets/lieu.png" alt="Y aller" />
-                        </a>
-                        <a href="tel:+33556102035" target="_blank">
+                            </a>
+                            <a href="tel:+33556102035" target="_blank">
                             <img src="assets/phone.png" alt="Telephone" />
-                        </a>
+                            </a>
+                        </section>
                     </div>
                 </div>
-                    </section>
-                    </section>
-  <!-- parcs-->
-                    <section id="parcs">
-                    <section id="parcs" class="alignTitreHome">
-                        <h2 data-lang="fr">Promenez-vous dans les parcs Bastidiens</h2>
-                        <h2 data-lang="it">Passeggiate nei parchi di Bastide</h2>
-                        <div class="card">
-                            <div class="card-infos">
+            </section>
+            <!-- parcs-->
+            <section id="parcs" class="alignTitreHome">
+                <h2 data-lang="fr">Promenez-vous dans les parcs Bastidiens</h2>
+                <h2 data-lang="it">Passeggiate nei parchi di Bastide</h2>
+                <div class="card">
+                    <div class="card-infos">
                         <h3>Le Jardin Botanique</h3>
                         <p data-lang="fr">
                             Le Jardin Botanique est une institution créée pour sensibiliser
@@ -530,29 +512,28 @@
                             Questo luogo rappresenta un'opportunità per mantenere lo stato zen, quindi
                             il silenzio e la tranquillità.
                         </p>
-
                         <section class="flex-container list-icons">
                             <a href="https://jardin-botanique-bordeaux.fr/"
                                 target="_blank">
-                                <img src="assets/globe.png" alt="Site web">
+                            <img src="assets/globe.png" alt="Site web">
                             </a>
                             <a
                                 href="https://www.google.fr/maps/place/Jardin+Botanique+de+Bordeaux/@44.8445804,-0.5611138,17z/data=!3m1!4b1!4m5!3m4!1s0xd55287582bb17df:0xae4bcbcef5c9f377!8m2!3d44.8445766!4d-0.5589251"
                                 target="_blank">
-                                <img src="assets/lieu.png" alt="Y aller">
+                            <img src="assets/lieu.png" alt="Y aller">
                             </a>
                             <a href="tel:+33556521877" target="_blank">
-                                <img src="assets/phone.png" alt="Telephone">
+                            <img src="assets/phone.png" alt="Telephone">
                             </a>
-                        </div>
-                        <img class="items items-right" src="assets/jardin_botanique1.jpg" alt="Image du jardin Botanique">
+                       </section>
                     </div>
-                        </section>
+                    <img class="items items-right" src="assets/jardin_botanique1.jpg" alt="Image du jardin Botanique">
+                </div>
 
-                        <div class="card">
-                            <img class="items items-left" src="assets/activites-darwin.jpeg" alt="Image du parc du Parc aux angeliques">
-                            <div class="card-infos">
-                            <h3>Le Parc aux Angéliques</h3>
+                <div class="card">
+                    <img class="items items-left" src="assets/activites-darwin.jpeg" alt="Image du parc du Parc aux angeliques">
+                    <div class="card-infos">
+                        <h3>Le Parc aux Angéliques</h3>
                         <p data-lang="fr">
                             Le parc aux Angéliques et un lieu joli pour faire des
                             promenades en restant en contact avec la nature et faire
@@ -564,29 +545,26 @@
                             a contatto con la natura e fare picnic con la famiglia o gli amici.
                             Il parco prende il nome da un fiore che rappresenta l’ispirazione e la passione.
                         </p>
-
                         <section class="flex-container list-icons">
                             <a
                                 href="https://www.bordeaux.fr/l24461/angeliques-parc-aux-"
                                 target="_blank">
-                                <img src="assets/globe.png" alt="Site web">
+                            <img src="assets/globe.png" alt="Site web">
                             </a>
                             <a
                                 href="https://www.google.fr/maps/place/Parc+aux+Ang%C3%A9liques/@44.8480324,-0.5690211,16.1z/data=!4m5!3m4!1s0xd5527d52a282d59:0x37394a6158286748!8m2!3d44.8471932!4d-0.5649601"
                                 target="_blank">
-                                <img src="assets/lieu.png" alt="Y aller">
+                            <img src="assets/lieu.png" alt="Y aller">
                             </a>
                             <a href="tel:+33556102030" target="_blank">
-                                <img src="assets/phone.png" alt="Telephone">
+                            <img src="assets/phone.png" alt="Telephone">
                             </a>
-                        </div>
-                    </div>
                         </section>
-
-                        
-                        <div class="card">
-                            <div class="card-infos">
-                                <h3>Le parc Pinçon</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-infos">
+                        <h3>Le parc Pinçon</h3>
                         <p data-lang="fr">
                             Le parc Pinçon est un espace vert situé au coeur du quartier
                             Bastide où les enfants peuvent jouer avec les structures de jeux.
@@ -599,33 +577,30 @@
                             fa parte del progetto per ripiantare alberi, preservare le diverse specie
                             e ridurre l'effetto serra.
                         </p>
-
                         <section class="flex-container list-icons">
                             <a
                                 href="https://www.bordeaux.fr/l24786/pincon-parc-"
                                 target="_blank">
-                                <img src="assets/globe.png" alt="Site web">
+                            <img src="assets/globe.png" alt="Site web">
                             </a>
                             <a
                                 href="https://www.google.fr/maps/place/Parc+Pin%C3%A7on/@44.8450998,-0.5478865,17z/data=!3m1!4b1!4m5!3m4!1s0xd55262203b62cd7:0xf1378abebdf3553d!8m2!3d44.845096!4d-0.5456978"
                                 target="_blank">
-                                <img src="assets/lieu.png" alt="Y aller">
+                            <img src="assets/lieu.png" alt="Y aller">
                             </a>
                             <a href="tel:+33556102030" target="_blank">
-                                <img src="assets/phone.png" alt="Telephone">
+                            <img src="assets/phone.png" alt="Telephone">
                             </a>
-                        </div>
-                        <img class="items items-right" src="assets/parc-pincon.jpg" alt="Image parc pincon">
-                    </div>
                         </section>
-                    </section>
-
+                    </div>
+                    <img class="items items-right" src="assets/parc-pincon.jpg" alt="Image parc pincon">
+                </div>
+            </section>
         </main>
-        
         <!-- FOOTER -->
         <footer>
             <hr>
-        </br>
+            </br>
             <form id="contactForm">
                 <h1 class="contactTitle" data-lang="fr">Contacte-nous</h1>
                 <h1 class="contactTitle" data-lang="it">Contattaci</h1>
@@ -643,10 +618,10 @@
               </form>
 
             </br>
-              <hr>
+            <hr>
             </br>
-           © 2022 Le Carré</a>
-           <br><br>
+            © 2022 Le Carré
+            <br><br>
         </footer>
         <script src="burger.js"></script>
         <script src="script.js"></script>
