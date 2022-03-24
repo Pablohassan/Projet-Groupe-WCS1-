@@ -30,9 +30,10 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
     alert(message);
+    document.getElementById("contactForm").reset();
   });
 const message =
-  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré. Grazie per il tuo messaggio! È stato inviato alla squadra di Carré";
+  "Merci pour votre message ! Il a bien été envoyé à l'équipe du Carré. Grazie per il vosto messaggio! È stato inviato alla squadra di Carré";
 
   // Ferme le menu burger à chaque click sur un lien du menu
 document.querySelectorAll(".menu a").forEach(function (element) {
