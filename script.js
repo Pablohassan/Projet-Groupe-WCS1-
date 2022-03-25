@@ -40,8 +40,6 @@ document
     alert(formContactMessages[selectedLanguage]);
     document.getElementById("contactForm").reset();
   });
-const message =
-  "Merci pour ton message ! Il a bien été envoyé à l'équipe du Carré. Grazie per il vostro messaggio! È stato inviato alla squadra di Carré";
 
 // Ferme le menu burger à chaque click sur un lien du menu
 document.querySelectorAll(".menu a, .nav .logo").forEach(function (element) {
@@ -69,3 +67,6 @@ function showMenu(menuOpen) {
 }
 
  
+document.getElementById("menu-button").addEventListener("click", function () {
+  showMenu(true);
+});
