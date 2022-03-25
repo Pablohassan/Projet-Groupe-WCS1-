@@ -66,6 +66,7 @@ function showMenu(menuOpen) {
   menu.classList.toggle("menu-hide", !menuOpen);
 }
 
+ 
 document.getElementById("menu-button").addEventListener("click", function () {
   showMenu(true);
 });
